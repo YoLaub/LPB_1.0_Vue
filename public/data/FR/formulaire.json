@@ -1,0 +1,20 @@
+[
+  {
+    "id": 0,
+    "type": "evenement",
+    "titre": "Prépare ton évènement ! (reçoit un devis sous 48h)",
+    "champ_1": "Ton Email...",
+    "champ_2": "De 0 - 50",
+    "champ_3": "De 50 - 100",
+    "champ_4": "+100",
+    "champ_5": "Autre..",
+    "champ_6": "Lieu..",
+    "champ_7": "J'accepte la politique de confidentialité",
+    "label_1": "Combien de personne présente ?",
+    "label_2": "Date de l'évènement:",
+    "etat_1": "Envoi en cours…",
+    "etat_2": "Envoyer!",
+    "success": "Votre demande a été envoyée avec succès !",
+    "erreur": "Une erreur est survenue. Veuillez réessayer."
+  }
+]

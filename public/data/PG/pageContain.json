@@ -1,0 +1,139 @@
+[
+  {
+    "id": 1,
+    "pageId": 1,
+    "type": "concept",
+    "titre": "Em busca de tradições culinárias",
+    "texte": "Nesta temporada, descubra uma proposta culinária com alma francesa e essência bretã.<br> Diretamente do coração da Bretanha - uma região da França marcada por sua forte identidade - chegam pratos autênticos que unem tradição e sabor.<br> Para saborear no local, levar para casa ou compartilhar em eventos privados, cada experiência foi pensada para oferecer qualidade, acolhimento e autenticidade. Deixe-se surpreender por uma gastronomia que honra suas raízes.",
+    "images": "/images/Table_de_crêpes_et_galettes.webp" 
+  },
+  {
+    "id": 2,
+    "pageId": 1,
+    "type": "menu",
+    "titre": "Descubra nosso cardápio!",
+    "texte": null,
+    "images": null
+  },
+  {
+    "id": 3,
+    "pageId": 1,
+    "type": "event",
+    "titre": "Nossa Rota de Sabor",
+    "texte": "Nossa culinária bretã desembarca em Mendoza, na Argentina, de outubro até o final de dezembro de 2025, e retorna entre março e maio de 2026.<br> E para um verão repleto de sabor, você nos encontra em Punta del Este, no Uruguai, do final de dezembro de 2025 até o final de fevereiro de 2026.",
+    "images": "/images/carte_amérique_du_sud.webp" 
+  },
+  {
+    "id": 4,
+    "pageId": 1,
+    "type": "event-bouton",
+    "titre": "Prepare seu evento!",
+    "texte": null,
+    "images": null
+  },
+  {
+    "id": 5,
+    "pageId": 2,
+    "type": "intro-menu",
+    "titre": "Experimente a essência da verdadeira culinária francesa",
+    "texte": "<strong>Les crêpes</strong><br>Ícone absoluto da gastronomia bretã, a crêpe é servida em versão doce ou natural, com uma massa fina e delicada feita à base de trigo macio. Recheada conforme sua preferência - Nutella, morangos frescos, dulce de leche ou nosso caramelo salgado artesanal - proporciona um momento de doçura onde tradição e prazer se encontram. <br><br><strong>Les galettes</strong><br>Especialidade salgada por excelência da Bretanha, a galette é preparada com farinha de trigo sarraceno, que confere textura rústica e sabor autêntico. Generosamente recheada com diversos ingredientes, é perfeita a qualquer hora do dia para uma verdadeira viagem culinária ao estilo bretão.<br><br><strong>La quiche lorraine</strong><br>Originária da região da Lorraine, essa receita clássica da culinária francesa combina uma massa quebradiça macia com um recheio cremoso de creme de leite fresco, ovos e bacon defumado. Ideal para ser apreciada quente ou morna, acompanhada de uma salada fresca, é uma pausa simples, saborosa e elegante.",
+    "images": null
+  },
+  {
+    "id": 6,
+    "pageId": 2,
+    "type": "event-bouton",
+    "titre": "Prepare seu evento!",
+    "texte": null,
+    "images": null
+  },
+  {
+    "id": 7,
+    "pageId": 3,
+    "type": "intro-nostra",
+    "titre": "Nuestra Historia",
+    "texte": null,
+    "images": null
+  },
+  {
+    "id": 8,
+    "pageId": 3,
+    "type": "nostra-concept",
+    "titre": "A essência da nossa aventura culinária",
+    "texte": "Da Bretanha a Mendoza, nossas raízes cantam sabores únicos. Foi em torno dessa paixão comum por nossos terroirs atípicos que nosso projeto de vida tomou forma, até se tornar hoje uma aventura culinária nômade a duas vozes. Oferecer a cada hemisfério as especialidades emblemáticas de nossas regiões, aproveitando as estações de verão para dinamizar a atividade ao longo do ano.",
+    "images": null
+  },
+  {
+    "id": 9,
+    "pageId": 3,
+    "type": "mission",
+    "titre": "O rumo da nossa aventura",
+    "texte": "Promover a culinária das nossas regiões na França e na América do Sul, combinando a autenticidade da Bretanha com a generosidade da cultura argentina. <br>Crescer e consolidar nossos conceitos em ambos os hemisférios para desenvolver uma rede de franquias de food trucks sazonais.",
+    "images": "/images/truck.png"
+  },
+  {
+    "id": 10,
+    "pageId": 3,
+    "type": "valeur",
+    "titre": "Os valores que moldam nosso projeto",
+    "texte": "Oferecer uma experiência culinária atípica a cada hemisfério, compartilhando os pratos da Bretanha com os argentinos e as especialidades da Cordilheira dos Andes com os franceses, por meio de uma cozinha caseira, generosa e cheia de personalidade. <br> Oferecemos pratos autênticos: Galettes, Crepes, Lomitos e Empanadas inspirados nos dois continentes, preparados com ingredientes frescos, locais e responsáveis.<br> A bordo do nosso food truck, vamos ao encontro das pessoas na França, Argentina e Uruguai, seguindo as temporadas turísticas - em mercados, festivais e eventos privados - para compartilhar muito mais que uma refeição: uma cultura, uma troca de sabores, um momento acolhedor e memorável.",
+    "images": "/images/decor.webp"
+  },
+  {
+    "id": 11,
+    "pageId": 2,
+    "type": "download",
+    "titre": "Baixe nosso cardápio aqui!",
+    "texte": null,
+    "images": null
+  },
+  {
+    "id": 12,
+    "pageId": 2,
+    "type": "instagram",
+    "titre": null,
+    "texte": "Em breve nos encontre no Instagram para acompanhar nossa aventura!",
+    "images": "/images/truck.png"
+  },
+  {
+    "id": 13,
+    "pageId": 1,
+    "type": "instagram",
+    "titre": null,
+    "texte": "Em breve nos encontre no Instagram para acompanhar nossa aventura!",
+    "images": "/images/truck.png"
+  },
+  {
+    "id": 14,
+    "pageId": 4,
+    "type": "mention",
+    "titre": "Aviso Legal",
+    "texte": "<p><strong>Editor do site:</strong><br>Este site ([www.la-petite-bretagne.com]) é operado por [Juan GIBSON et Alexandre HOVELAQUE ], com endereço em [Mendoza], CNPJ: [CNPJ].<br>Email: <a href='mailto:[mdz.bzh@gmail.com]'>[mdz.bzh@gmail.com]</a></p> <p><strong>Provedor de hospedagem:</strong><br>[OVH] - [2, rue Kellermann, 59100 Roubaix]</p><p><strong>Finalidade do site:</strong><br>Este site tem como objetivo apresentar o restaurante [Nome do restaurante], divulgar seus serviços e permitir a visualização ou download do menu.</p><p><strong>Responsabilidade:</strong><br>O conteúdo deste site é fornecido para fins informativos. O editor não se responsabiliza por erros, omissões ou problemas técnicos.</p><h3>Proteção de Dados Pessoais</h3><p>De acordo com a Lei Nº 13.709 (Lei Geral de Proteção de Dados Pessoais - LGPD), os dados enviados por meio do formulário de contato (como o e-mail) são utilizados exclusivamente para responder à sua mensagem. Não compartilhamos seus dados com terceiros, exceto em caso de obrigação legal.<br>Você pode exercer seus direitos de acesso, retificação ou exclusão enviando um e-mail para: <a href='mailto:[mdz.bzh@gmail.com]'>[mdz.bzh@gmail.com]</a></p><p>Autoridade de controle: Autoridade Nacional de Proteção de Dados (ANPD) - <a href='https://www.gov.br/anpd' target='_blank'>www.gov.br/anpd</a></p><h3>Cookies</h3><p>Este site pode utilizar cookies técnicos ou de análise. Você pode gerenciar o uso de cookies nas configurações do seu navegador.</p><h3>Propriedade intelectual</h3><p>Todo o conteúdo (textos, imagens, logotipos, designs) é de propriedade de [Nome do Responsável], salvo indicação em contrário. A reprodução sem autorização por escrito é proibida.</p><h3>Menu para download</h3><p>O menu disponível para download é fornecido apenas para fins informativos e pode estar sujeito a alterações sem aviso prévio.</p><p>© [2025] - [La petite Bretagne]. Todos os direitos reservados.</p>",
+    "images": null
+  },
+  {
+    "id": 15,
+    "pageId": 1,
+    "type": "acces-menu",
+    "titre": "Saboreá lo mejor de la cocina tradicional francesa",
+    "texte": null,
+    "images": null
+  },
+  {
+    "id": 16,
+    "pageId": 2,
+    "type": "menu-pres",
+    "titre": "Menu",
+    "texte": null,
+    "images": null
+  },
+  {
+    "id": 17,
+    "pageId": 1,
+    "type": "geoloc",
+    "titre": null,
+    "texte": "Encontre a gente aqui!",
+    "texte2": "Atualmente a caminho, entre em contato conosco pelo nosso formulário para preparar o seu evento!",
+    "images": null
+  }
+]

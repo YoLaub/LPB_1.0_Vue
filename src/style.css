@@ -1,0 +1,120 @@
+:root {
+  font-family: "Lato";
+  line-height: 1.5;
+  font-weight: 400;
+
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* dancing-script-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/dancing-script-v28-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* lato-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/fonts/lato-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* lato-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/fonts/lato-v24-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+a {
+  font-weight: 700;
+  text-decoration: inherit;
+  cursor: pointer;
+}
+
+a:hover {
+  scale: 1.1;
+}
+
+h1,h2,h3,h4{
+  font-family: 'Dancing Script';
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  color: #0A2938;
+}
+
+
+
+h2{
+  font-size: 2.2em;
+}
+
+button {
+  border-radius: 8px;
+  font-family: 'Dancing Script' !important;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1.875em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.buttonMenu{
+  width: 100%;
+}
+
+.card {
+  padding-top: 1.2em;
+  background-color: rgba(250, 228, 206, 0.66);
+  border-radius: 5px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.card p{
+  margin: 16px;
+}
+
+.card img {
+  border-radius: 0px 0px 5px 5px;
+}
+
+#app {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.titre{
+    font-family: 'Dancing Script';
+}
+
+footer{
+  background-color: #0A2938;
+  padding: 8px;
+  }
+
+footer a, footer h3 {
+  color: #FAE4CE;
+  line-height: 1.1;
+}
+

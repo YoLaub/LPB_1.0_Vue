@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "titre": "Crêpes",
+    "texte": "Nossas Crêpes",
+    "hash": "#menu0",
+    "image": "/images/crepes.webp",
+    "autre_1": "Voltar"
+  },
+  {
+    "id": 2,
+    "titre": "Galettes",
+    "texte": "Nossas galettes",
+    "hash": "#menu1",
+    "image": "/images/galette.webp",
+    "autre_1": "Voltar"
+  },
+  {
+    "id": 3,
+    "titre": "Quiches",
+    "texte": "Nossa Quiche Lorraine",
+    "hash": "#menu2",
+    "image": "/images/quiche.webp",
+    "autre_1": "Voltar"
+  },
+  {
+    "id": 4,
+    "titre": "Softs",
+    "texte": "Nossas Bebidas",
+    "hash": "#menu3",
+    "image": "/images/boissons.webp",
+    "autre_1": "Voltar"
+  }
+]

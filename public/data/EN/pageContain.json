@@ -1,0 +1,139 @@
+[
+  {
+    "id": 1,
+    "pageId": 1,
+    "type": "concept",
+    "titre": "Meeting French culinary traditions",
+    "texte": "This season, embark on a culinary journey to Brittany, a small region in France known for its bold character!<br> Rich in flavor and proud of its roots, Brittany brings authentic dishes straight to your table - whether you choose to dine in, take away, or even enjoy them at your private events. A unique, friendly, and delicious experience awaits you!",
+    "images": "/images/Table_de_crêpes_et_galettes.webp"
+  },
+  {
+    "id": 2,
+    "pageId": 1,
+    "type": "menu",
+    "titre": "Explore Our Menu !",
+    "texte": null,
+    "images": null
+  },
+  {
+    "id": 3,
+    "pageId": 1,
+    "type": "event",
+    "titre": "Our Culinary Journey",
+    "texte": "Find our Breton cuisine in Mendoza, Argentina, from October to the end of December 2025, and again from March to May 2026.<br> For a summer filled with delicious flavors, we'll be in Punta del Este, Uruguay, from late December 2025 to the end of February 2026.",
+    "images": "/images/carte_amérique_du_sud.webp"
+  },
+  {
+    "id": 4,
+    "pageId": 1,
+    "type": "event-bouton",
+    "titre": "Organize Your Event !",
+    "texte": null,
+    "images": null
+  },
+  {
+    "id": 13,
+    "pageId": 1,
+    "type": "instagram",
+    "titre": null,
+    "texte": "Find us soon on Instagram to follow our adventure!",
+    "images": "/images/truck.png"
+  },
+  {
+    "id": 5,
+    "pageId": 2,
+    "type": "intro-menu",
+    "titre": "Enjoy the Timeless Taste of French Cuisine",
+    "texte": "<strong>Crêpes</strong> <br>A true icon of Breton gastronomy, the crêpe comes in sweet or plain versions, with a delicate, thin batter made from soft wheat flour.Topped with your favorite flavors - Nutella, fresh strawberries, dulce de leche, or homemade salted butter caramel - it promises a sweet moment of tradition and indulgence.<br><br><strong>Galettes</strong><br>A savory specialty from Brittany, the galette is made with buckwheat flour, giving it a rustic texture and authentic taste. Generously filled with egg, ham, and melted cheese, it's perfect any time of day - a flavorful journey straight to the heart of Brittany.<br> <br><strong>Quiche Lorraine</strong><br>Originating from the Lorraine region of France, this classic dish features a flaky pastry crust filled with a rich blend of fresh cream, eggs, and smoked bacon. Best enjoyed warm or at room temperature, served with a crisp salad - a simple, elegant, and satisfying bite of French tradition.",
+    "images": null
+  },
+  {
+    "id": 6,
+    "pageId": 2,
+    "type": "event-bouton",
+    "titre": "Organize Your Event !",
+    "texte": null,
+    "images": null
+  },
+  {
+    "id": 7,
+    "pageId": 2,
+    "type": "download",
+    "titre": "Download our menu here!",
+    "texte": null,
+    "images": null
+  },
+  {
+    "id": 8,
+    "pageId": 2,
+    "type": "instagram",
+    "titre": null,
+    "texte": "Find us soon on Instagram to follow our adventure!",
+    "images": "/images/truck.png"
+  },
+  {
+    "id": 9,
+    "pageId": 3,
+    "type": "intro-nostra",
+    "titre": "Nuestra Historia",
+    "texte": null,
+    "images": null
+  },
+  {
+    "id": 10,
+    "pageId": 3,
+    "type": "nostra-concept",
+    "titre": "The essence of our culinary adventure",
+    "texte": "From Bretagne to Mendoza, our roots sing with unique flavors. It is around this shared passion for our distinctive terroirs that our life project took shape, ultimately becoming a two-voice nomadic culinary adventure.<br> Our goal is to bring each hemisphere the iconic specialties of our regions, making the most of the summer seasons to keep our activity vibrant all year round.",
+    "images": null
+  },
+  {
+    "id": 11,
+    "pageId": 3,
+    "type": "mission",
+    "titre": "The goal of our adventure",
+    "texte": "To promote the cuisine of our regions in France and South America, blending the authenticity of Brittany with the generosity of Argentine culture. <br>To grow and establish our concepts in both hemispheres by developing a seasonal food truck franchise network",
+    "images": "/images/truck.png"
+  },
+  {
+    "id": 12,
+    "pageId": 3,
+    "type": "valeur",
+    "titre": "The values that shape our project",
+    "texte": "To offer a unique culinary experience to each hemisphere by sharing the flavors of Brittany with Argentinians and the specialties of the Andes with the French, through homemade cuisine that is generous and full of character. <br> We serve authentic dishes: Galettes, Crêpes, Lomitos, and Empanadas inspired by both continents, prepared with fresh, local, and responsibly sourced ingredients. <br>Aboard our food truck, we connect with people in France, Argentina, and Uruguay, following the rhythm of the tourist seasons — at markets, festivals, and private events—to share more than just a meal: a culture, a fusion of flavors, and a warm, memorable moment.",
+    "images": "/images/decor.webp"
+  },
+  {
+    "id": 14,
+    "pageId": 4,
+    "type": "mention",
+    "titre": "Legal Notice",
+    "texte": "<p><strong>Site editor:</strong><br>This website ([www.tusitio.com]) is operated by [Juan GIBSON et Alexandre HOVELAQUE ], located at [Mendoza], CUIT: [CUIT].<br>Email: <a href='mailto:[mdz.bzh@gmail.com]'>[mdz.bzh@gmail.com]</a></p><p><strong>Hosting provider:</strong><br>[Hosting provider's name] - [Address or website link]</p><p><strong>Purpose of the website:</strong><br>This site presents the restaurant [La petite Bretagne], its services, and allows visitors to view or download the menu.</p><p><strong>Responsibility:</strong><br>The content on this site is provided for informational purposes. The editor shall not be held liable for errors, omissions, or technical issues.</p><strong>Personal Data Protection</strong><p>In accordance with Argentine Law No. 25.326 on Personal Data Protection, any data submitted via the contact form (such as email address) will only be used to respond to your request. No personal data will be shared with third parties, except as required by law.<br>You can exercise your rights of access, correction, or deletion by contacting us at: <a href='mailto:[mdz.bzh@gmail.com]'>[mdz.bzh@gmail.com]</a></p><p>Supervisory authority: Dirección Nacional de Protección de Datos Personales - <a href='https://www.argentina.gob.ar/aaip' target='_blank'>www.argentina.gob.ar/aaip</a></p><strong>Cookies</strong><p>This website may use technical or analytical cookies. You can manage them through your browser settings.</p><strong>Intellectual Property</strong><p>All content (texts, images, logos, designs) is the property of [Juan GIBSON et Alexandre HOVELAQUE], unless otherwise stated. Any reproduction is prohibited without written authorization.</p><strong>Downloadable Menu</strong><p>The downloadable menu is provided for informational purposes only and may be updated without notice.</p><p>© [2025] - [La petite Bretagne]. All rights reserved.</p>",
+    "images": null
+  },
+  {
+    "id": 15,
+    "pageId": 1,
+    "type": "acces-menu",
+    "titre": "Enjoy the Timeless Taste of French Cuisine",
+    "texte": null,
+    "images": null
+  },
+  {
+    "id": 16,
+    "pageId": 2,
+    "type": "menu-pres",
+    "titre": "Menu",
+    "texte": null,
+    "images": null
+  },
+  {
+    "id": 17,
+    "pageId": 1,
+    "type": "geoloc",
+    "titre": null,
+    "texte": "Meet us here!",
+    "texte2": "Currently on the way, contact us to organize your event!",
+    "images": null
+  }
+]

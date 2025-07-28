@@ -1,0 +1,35 @@
+[
+  {
+    "id": 0,
+    "titre": "Accueil",
+    "lien": "/",
+    "cible": "Home",
+    "order": 1,
+    "Type": "principal"
+  },
+  {
+    "id": 1,
+    "titre": "Menu & Prestation",
+    "lien": "/menu_et_prestation",
+    "cible": "Menu",
+    "order": 2,
+    "Type": "principal"
+  },
+  {
+    "id": 2,
+    "titre": "Nuestra Historia",
+    "lien": "/nostra_historia",
+    "cible": "NostraHistoria",
+    "order": 3,
+    "Type": "principal"
+  },
+  {
+    "id": 3,
+    "titre": "Mentions Legales",
+    "lien": "/mention_legal",
+    "cible": null,
+    "order": null,
+    "Type": null
+  }
+  
+]

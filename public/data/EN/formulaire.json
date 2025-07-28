@@ -1,0 +1,21 @@
+[
+  {
+    "id": 0,
+    "type": "evenement",
+    "titre": "Organize Your Event ! (Receive your quote within 48 hrs)",
+    "champ_1": "Your mail...",
+    "champ_2": "From 0 - 50",
+    "champ_3": "From 50 - 100",
+    "champ_4": "+100",
+    "champ_5": "Other..",
+    "champ_6": "Location..",
+    "champ_7": "I accept the privacy policy",
+    "label_1": "Persons",
+    "label_2": "Date of the event:",
+    "etat_1": "Sending…",
+    "etat_2": "Send !",
+    "success": "Successfully sent your request !",
+    "erreur": "An error occurred. Please try again."
+  }
+]
+

@@ -1,0 +1,21 @@
+[
+  {
+    "id": 0,
+    "type": "evenement",
+    "titre": "¡Prepará tu evento! (Presupuesto dentro de 48hs)",
+    "champ_1": "Tú email...",
+    "champ_2": "De 0 - 50",
+    "champ_3": "De 50 - 100",
+    "champ_4": "+100",
+    "champ_5": "Otro :..",
+    "champ_6": "Ubicación del evento..",
+    "champ_7": "Acepto la política de privacidad",
+    "label_1": "Cantidad de personas :",
+    "label_2": "Fecha del evento:",
+    "etat_1": "Se está enviando…",
+    "etat_2": "Enviar!",
+    "success": "¡Tu solicitud se envió correctamente!",
+    "erreur": "Algo salió mal. Por favor, vuelve a intentarlo."
+  }
+]
+

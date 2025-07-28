@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "nom": "Home",
+    "navigation": "Accueil",
+    "titre": "Cocina bretona en Argentina y Uruguay – Una experiencia culinaria francesa en Mendoza y Punta del Este",
+    "meta": "Cocina bretona en Argentina y Uruguay – Una experiencia culinaria francesa en Mendoza y Punta del Este",
+    "lien": null
+  },
+  {
+    "id": 2,
+    "nom": "Menu",
+    "navigation": "Menu & Prestation",
+    "titre": "Crêpes, galettes y quiche lorraine – Especialidades y tradiciones culinarias francesas",
+     "meta": "Crêpes, galettes y quiche lorraine – Especialidades y tradiciones culinarias francesas",
+    "lien": null
+  },
+  {
+    "id": 3,
+    "nom": "NostraHistoria",
+    "navigation": "Nuestra Historia",
+    "titre": "Cocina nómada bretona y argentina – Un food truck entre Francia y América del Sud",
+    "meta": "Cocina nómada bretona y argentina – Un food truck entre Francia y América del Sud",
+    "lien": null
+  },
+  {
+    "id": 4,
+    "nom": "MentionLegal",
+    "navigation": "Mentions Legal",
+    "titre":  "Aviso legal",
+    "meta": "Aviso legal",
+    "lien": null
+  }
+]

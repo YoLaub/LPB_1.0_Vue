@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "titre": "Nos Crêpes",
+    "texte": "Nos Crêpes",
+    "hash": "#menu0",
+    "image": "/images/crepes.webp",
+    "autre_1": "Retour"
+  },
+  {
+    "id": 2,
+    "titre": "Nos Galettes",
+    "texte": "Nos galettes",
+    "hash": "#menu1",
+    "image": "/images/galette.webp",
+    "autre_1": "Retour"
+  },
+  {
+    "id": 3,
+    "titre": "Notre Quiche Lorraine",
+    "texte": "Notre Quiche Lorraine",
+    "hash": "#menu2",
+    "image": "/images/quiche.webp",
+    "autre_1": "Retour"
+  },
+  {
+    "id": 4,
+    "titre": "Nos Boissons",
+    "texte": "Nos boissons",
+    "hash": "#menu3",
+    "image": "/images/boissons.webp",
+    "autre_1": "Retour"
+  }
+]

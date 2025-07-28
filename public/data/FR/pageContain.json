@@ -1,0 +1,139 @@
+[
+  {
+    "id": 1,
+    "pageId": 1,
+    "type": "concept",
+    "titre": "Une tradition culinaire française à découvrir",
+    "texte": "Cette saison, embarquez pour un voyage culinaire en terre bretonne, petite région de France de caractère !<br>Savoureuse et fière de ses racines, la Bretagne s’invite à votre table avec des plats authentiques à déguster sur place, à emporter... ou même chez vous lors de vos événements privés.<br>Une expérience unique, conviviale et gourmande vous attend!",
+    "images": "/images/Table_de_crêpes_et_galettes.webp" 
+  },
+  {
+    "id": 2,
+    "pageId": 1,
+    "type": "menu",
+    "titre": "Découvre notre menu ici!",
+    "texte": null,
+    "images": null
+  },
+  {
+    "id": 3,
+    "pageId": 1,
+    "type": "event",
+    "titre": "Nos destinations culinaires",
+    "texte": "Retrouvez notre cuisine bretonne à Mendoza en Argentine, d'octobre à fin décembre 2025, puis à nouveau de mars à mai 2026.\n<br>Et pour un été sous le signe de la gourmandise, nous serons à Punta del Este en Uruguay, de fin décembre 2025 à fin février 2026.",
+    "images": "/images/carte_amérique_du_sud.webp" 
+  },
+  {
+    "id": 4,
+    "pageId": 1,
+    "type": "event-bouton",
+    "titre": "Prépare ton évènement!",
+    "texte": null,
+    "images": null
+  },
+  {
+    "id": 13,
+    "pageId": 1,
+    "type": "instagram",
+    "titre": null,
+    "texte": "Retrouver nous bientôt sur Instagram pour suivre notre aventure!",
+    "images": "/images/truck.png"
+  },
+  {
+    "id": 5,
+    "pageId": 2,
+    "type": "intro-menu",
+    "titre": "Savoure les traditions culinaires et classiques à la française",
+    "texte": "<strong>Les crêpes</strong><br> Véritable icône de la gastronomie bretonne, la crêpe se décline en version sucrée ou nature, avec sa pâte fine et délicate à base de blé tendre. Garnie selon vos envies — Nutella, fraises fraîches, dulce de leche, ou encore caramel au beurre salé maison — elle promet un moment de douceur, entre tradition et plaisir. <br><br> <strong>Les galettes</strong><br> Spécialité salée emblématique de la Bretagne, la galette est confectionnée à partir de farine de sarrasin, lui conférant une texture rustique et un goût authentique. Généreusement garnie d'œuf, de jambon et de fromage fondant, elle se savoure à toute heure, pour une escapade bretonne pleine de caractère. <br><br> <strong>La quiche lorraine</strong><br> Originaire de la région Lorraine en France, cette recette classique de la cuisine française marie une pâte brisée fondante à une garniture onctueuse composée de crème fraîche, œufs et poitrine fumée. À déguster chaude ou tiède, accompagnée d'une salade croquante, pour une pause à la fois simple, savoureuse et élégante.",
+    "images": null
+  },
+  {
+    "id": 6,
+    "pageId": 2,
+    "type": "event-bouton",
+    "titre": "Prépare ton évènement!",
+    "texte": "Les crêpes véritable icône de la gastronomie bretonne, la crêpe se décline en version sucrée ou nature, avec sa pâte fine et délicate à base de blé tendre. Garnie selon vos envies — Nutella, fraises fraîches, dulce de leche, ou encore caramel au beurre salé maison — elle promet un moment de douceur, entre tradition et plaisir. <br> <br> Les galettes spécialité salée emblématique de la Bretagne, la galette est confectionnée à partir de farine de sarrasin, lui conférant une texture rustique et un goût authentique. Généreusement garnie d'œuf, de jambon et de fromage fondant, elle se savoure à toute heure, pour une escapade bretonne pleine de caractère. <br> <br> La quiche lorraine originaire de la région Lorraine en France, cette recette classique de la cuisine française marie une pâte brisée fondante à une garniture onctueuse composée de crème fraîche, œufs et poitrine fumée. À déguster chaude ou tiède, accompagnée d'une salade croquante, pour une pause à la fois simple, savoureuse et élégante.",
+    "images": null
+  },
+  {
+    "id": 7,
+    "pageId": 2,
+    "type": "download",
+    "titre": "Télécharger notre menu ici!",
+    "texte": null,
+    "images": null
+  },
+  {
+    "id": 8,
+    "pageId": 2,
+    "type": "instagram",
+    "titre": null,
+    "texte": "Retrouver nous bientôt sur Instagram pour suivre notre aventure!",
+    "images": "/images/truck.png"
+  },
+  {
+    "id": 9,
+    "pageId": 3,
+    "type": "intro-nostra",
+    "titre": "Nuestra Historia",
+    "texte": null,
+    "images": null
+  },
+  {
+    "id": 10,
+    "pageId": 3,
+    "type": "nostra-concept",
+    "titre": "L'essence de notre aventure culinaire",
+    "texte": "De la Bretagne à Mendoza, nos racines chantent des saveurs uniques.<br> C'est autour de cette passion commune pour nos terroirs atypiques que notre projet de vie s'est dessiné, jusqu'à devenir aujourd'hui une aventure culinaire nomade à deux voix.  <br>Proposer à chaque hémisphère les spécialités emblématiques de nos régions, en tirant parti des saisons estivales pour dynamiser l'activité tout au long de l'année.",
+    "images": null
+  },
+  {
+    "id": 11,
+    "pageId": 3,
+    "type": "mission",
+    "titre": "Le cap de notre aventure",
+    "texte": "Promouvoir la cuisine de nos régions en France et en Amérique du Sud, mêlant l'authenticité de la Bretagne et la générosité de la culture Argentine. <br> Croître et ancrer nos concepts dans les deux hémisphères pour y développer un réseau de franchise de Food Truck saisonnier.",
+    "images": "/images/truck.png"
+  },
+  {
+    "id": 12,
+    "pageId": 3,
+    "type": "valeur",
+    "titre": "Les valeurs qui façonnent notre projet",
+    "texte": "Offrir une expérience culinaire atypique à chaque hémisphère en partageant les mets de la Bretagne aux Argentins et les spécialités de la Cordillère des Andes aux Français, à travers une cuisine maison, généreuse et pleine de caractère. <br> Nous proposons des plats authentiques : Galettes, Crêpes, Lomitos et Empanadas d'inspiration des deux continents, préparés avec des produits frais locaux et responsables. <br> A bord de notre foodtruck, nous allons à la rencontre des gens en France, en Argentine et en Uruguay au gré des saisons touristiques, sur les marchés, festivals et évènements privés pour partager bien plus qu'un repas : une culture, un partage de saveurs, un moment chaleureux et mémorable.",
+    "images": "/images/decor.webp"
+  },
+  {
+    "id": 14,
+    "pageId": 4,
+    "type": "mention",
+    "titre": "Mentions légale",
+    "texte": "<p><strong>Éditeur du site :</strong><br>Ce site web ([www.la-petite-bretagne.com]) est édité par [Juan GIBSON et Alexandre HOVELAQUE ], situé à [Mendoza], SIRET : [SIRET].<br>Email : <a href='mailto:[mdz.bzh@gmail.com]'>[mdz.bzh@gmail.com]</a></p><p><strong>Hébergeur :</strong><br>[OVH] - [2, rue Kellermann, 59100 Roubaix]</p><p><strong>Objet du site :</strong><br>Ce site a pour vocation de présenter le service événementiel [La petite Bretagne], ses services et son menu, disponible en ligne ou en téléchargement.</p><p><strong>Responsabilité :</strong><br>Les contenus sont donnés à titre informatif. L'éditeur ne saurait être tenu pour responsable des erreurs, omissions ou dysfonctionnements techniques.</p><strong>Données personnelles</strong><p>Conformément à la loi Informatique et Libertés (Loi n°78-17), aucune donnée personnelle n'est collectée sans votre consentement. Aucune information n'est cédée à des tiers.<br>Vous pouvez exercer vos droits d'accès, de rectification ou de suppression à l'adresse suivante : <a href='mailto:[mdz.bzh@gmail.com]'>[mdz.bzh@gmail.com]</a></p><p>Autorité de contrôle : CNIL - <a href='https://www.cnil.fr' target='_blank'>www.cnil.fr</a></p><strong>Cookies</strong><p>Le site peut utiliser des cookies à des fins techniques ou d'analyse. Vous pouvez les désactiver dans les paramètres de votre navigateur.</p><strong>Propriété intellectuelle</strong><p>Les contenus présents sur ce site (textes, images, graphismes, logo) sont la propriété de [Juan GIBSON et Alexandre HOVELAQUE], sauf mention contraire. Toute reproduction est interdite sans autorisation écrite.</p><strong>Menu téléchargeable</strong><p>Le menu proposé en téléchargement est fourni à titre indicatif. Il peut être modifié sans préavis.</p><p>© [2025] - [La petite Bretagne]. Tous droits réservés.</p>",
+    "images": null
+  },
+  {
+    "id": 15,
+    "pageId": 1,
+    "type": "acces-menu",
+    "titre": "Savoure les traditions culinaires et classiques à la française",
+    "texte": null,
+    "images": null
+  },
+  {
+    "id": 16,
+    "pageId": 2,
+    "type": "menu-pres",
+    "titre": "Menu",
+    "texte": null,
+    "images": null
+  },
+  {
+    "id": 17,
+    "pageId": 1,
+    "type": "geoloc",
+    "titre": null,
+    "texte": "Retouver nous ici !",
+    "texte2": "Actuellement en route, contact-nous via notre formulaire pour préparer ton évènement!",
+    "images": null
+  }
+]

@@ -1,0 +1,156 @@
+[
+  {
+    "catId": 1,
+    "titre": "Beurre / Sucre",
+    "prix": "$4 000",
+    "ingredient": "Butter and sugar",
+    "order": 2
+  },
+  {
+    "catId": 1,
+    "titre": "Nutella",
+    "prix": "$5 000",
+    "ingredient": "Nutella",
+    "order": 6
+  },
+{
+    "catId": 1,
+    "titre": "Fraises / Nutella / Chantilly",
+    "prix": "$10 000",
+    "ingredient": "Strawberry, lemon juice, nutella and whipped cream",
+    "order": 7
+  },
+{
+    "catId": 1,
+    "titre": "Dulce de leche",
+    "prix": "$4 000",
+    "ingredient": "Dulce de leche",
+    "order": 4
+  },
+{
+    "catId": 1,
+    "titre": "Fraises / Dulce de leche / Chantilly",
+    "prix": "$10 000",
+    "ingredient": "Strawberry, lemon juice, dulce de leche and whipped cream",
+    "order": 8
+  },
+{
+    "catId": 1,
+    "titre": "Caramel au beurre salé",
+    "prix": "$5 000",
+    "ingredient": "Homemade salted butter caramel",
+    "order": 5
+  },
+{
+    "catId": 1,
+    "titre": "Sucre",
+    "prix": "$3 500",
+    "ingredient": "Sugar",
+    "order": 1
+  },
+{
+    "catId": 1,
+    "titre": "Jus de citron et sucre",
+    "prix": "$4 000",
+    "ingredient": "Lemon juice and sugar",
+    "order": 3
+  },
+{
+    "catId": 1,
+    "titre": "Suzette",
+    "prix": "$10 000",
+    "ingredient": "Flambée with Grand Marnier, lemon juice and sugar",
+    "order": 9
+  },
+{
+    "catId": 2,
+    "titre": "Complète",
+    "prix": "$9 500",
+    "ingredient": "Ham, egg, grated cheese and salad",
+    "order": 1
+  },
+{
+    "catId": 2,
+    "titre": "Saucisse / moutarde",
+    "prix": "$9 500",
+    "ingredient": "Sausage with mustard",
+    "order": 2
+  },
+{
+    "catId": 2,
+    "titre": "Thon",
+    "prix": "$11 000",
+    "ingredient": "Tuna, champignons, cherry tomatoes, fresh cream, lemon juice and chives",
+    "order": 3
+  },
+{
+    "catId": 2,
+    "titre": "Forestière",
+    "prix": "$11 500",
+    "ingredient": "Egg, grated cheese, champignons, onion and salad",
+    "order": 4
+  },
+{
+    "catId": 2,
+    "titre": "Saumon",
+    "prix": "$13 500",
+    "ingredient": "Salmon, leek fondue with white wine, fresh cream, lemon juice and chives",
+    "order": 5
+  },
+{
+    "catId": 3,
+    "titre": "Parisienne",
+    "prix": " $10 000",
+    "ingredient": "Smoked bacon, eggs, fresh cream, garlic, onion, shallot, white wine, nutmeg and salad",
+    "order": 1
+  },
+{
+    "catId": 4,
+    "titre": "Café",
+    "prix": "$2000",
+    "ingredient": null,
+    "order": 1
+  },
+{
+    "catId": 4,
+    "titre": "Coca cola",
+    "prix": "$3 000",
+    "ingredient": null,
+    "order": 2
+  },
+{
+    "catId": 4,
+    "titre": "Coca cola zéro",
+    "prix": "$3 000",
+    "ingredient": null,
+    "order": 3
+  },
+{
+    "catId": 4,
+    "titre": "Fanta",
+    "prix": "$3 000",
+    "ingredient": null,
+    "order": 4
+  },
+{
+    "catId": 4,
+    "titre": "Sprite",
+    "prix": "$3 000",
+    "ingredient": null,
+    "order": 5
+  },
+{
+    "catId": 4,
+    "titre": "Still water",
+    "prix": "$3 500",
+    "ingredient": null,
+    "order": 6
+  },
+{
+    "catId": 4,
+    "titre": "Sparkling water",
+    "prix": "$3 500",
+    "ingredient": null,
+    "order": 7
+  }
+]

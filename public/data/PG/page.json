@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "nom": "Home",
+    "navigation": "Accueil",
+    "titre": "Culinária Bretã na Argentina e Uruguai - Uma experiência culinária francesa em Mendoza e Punta del Este",
+    "meta": "Culinária Bretã na Argentina e Uruguai - Uma experiência culinária francesa em Mendoza e Punta del Este",
+    "lien": null
+  },
+  {
+    "id": 2,
+    "nom": "Menu",
+    "navigation": "Menu & Prestation",
+    "titre": "Crepes e galettes, quiche lorraine - Especialidades culinárias e tradições francesas",
+     "meta": "Crepes e galettes, quiche lorraine - Especialidades culinárias e tradições francesas",
+    "lien": null
+  },
+  {
+    "id": 3,
+    "nom": "NostraHistoria",
+    "navigation": "Nuestra Historia",
+    "titre": "Culinária nômade da Bretanha e Argentina - Um food truck entre a França e a América do Sul",
+    "meta": "Culinária nômade da Bretanha e Argentina - Um food truck entre a França e a América do Sul",
+    "lien": null
+  },
+  {
+    "id": 4,
+    "nom": "MentionLegal",
+    "navigation": "Mentions Legal",
+    "titre":  "Aviso Legal",
+    "meta": "Aviso Legal",
+    "lien": null
+  }
+]

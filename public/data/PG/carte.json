@@ -1,0 +1,156 @@
+[
+  {
+    "catId": 1,
+    "titre": "Beurre / Sucre",
+    "prix": "$4 000",
+    "ingredient": "Manteiga e açúcar",
+    "order": 2
+  },
+  {
+    "catId": 1,
+    "titre": "Nutella",
+    "prix": "$5 000",
+    "ingredient": "Nutella",
+    "order": 6
+  },
+{
+    "catId": 1,
+    "titre": "Fraises / Nutella / Chantilly",
+    "prix": "$10 000",
+    "ingredient": "Morangos com suco de limão, Nutella e chantilly",
+    "order": 7
+  },
+{
+    "catId": 1,
+    "titre": "Dulce de leche",
+    "prix": "$4 000",
+    "ingredient": "Dulce de leche",
+    "order": 4
+  },
+{
+    "catId": 1,
+    "titre": "Fraises / Dulce de leche / Chantilly",
+    "prix": "$10 000",
+    "ingredient": "Morangos com suco de limão, dulce de leche e chantilly",
+    "order": 8
+  },
+{
+    "catId": 1,
+    "titre": "Caramel au beurre salé",
+    "prix": "$5 000",
+    "ingredient": "Caramelo caseiro com manteiga salgada",
+    "order": 5
+  },
+{
+    "catId": 1,
+    "titre": "Sucre",
+    "prix": "$3 500",
+    "ingredient": "Açúcar",
+    "order": 1
+  },
+{
+    "catId": 1,
+    "titre": "Jus de citron et sucre",
+    "prix": "$4 000",
+    "ingredient": "Suco de limão e açúcar",
+    "order": 3
+  },
+{
+    "catId": 1,
+    "titre": "Suzette",
+    "prix": "$10 000",
+    "ingredient": "Flambado com Grand Marnier, suco de limão e açúcar",
+    "order": 9
+  },
+{
+    "catId": 2,
+    "titre": "Complète",
+    "prix": "$9 500",
+    "ingredient": "Presunto, ovo, queijo e salada",
+    "order": 1
+  },
+{
+    "catId": 2,
+    "titre": "Saucisse / moutarde",
+    "prix": "$9 500",
+    "ingredient": "Linguiça e mostarda",
+    "order": 2
+  },
+{
+    "catId": 2,
+    "titre": "Thon",
+    "prix": "$11 000",
+    "ingredient": "Atum, cogumelos, tomate cereja, creme de leite, suco de limão e cebolinha",
+    "order": 3
+  },
+{
+    "catId": 2,
+    "titre": "Forestière",
+    "prix": "$11 500",
+    "ingredient": "Ovo, queijo, cogumelos, cebolas e salada",
+    "order": 4
+  },
+{
+    "catId": 2,
+    "titre": "Saumon",
+    "prix": "$13 500",
+    "ingredient": "Salmão, fondue de alho-poró ao vinho branco, creme de leite, limão e cebolinha",
+    "order": 5
+  },
+{
+    "catId": 3,
+    "titre": "Parisienne",
+    "prix": " $10 000",
+    "ingredient": "Peito defumado, ovos, creme de leite, alho, cebolas, chalotas, vinho branco, noz-moscada e salada",
+    "order": 1
+  },
+{
+    "catId": 4,
+    "titre": "Café",
+    "prix": "$2 000",
+    "ingredient": null,
+    "order": 1
+  },
+{
+    "catId": 4,
+    "titre": "Coca cola",
+    "prix": "$3 000",
+    "ingredient": null,
+    "order": 2
+  },
+{
+    "catId": 4,
+    "titre": "Coca cola zéro",
+    "prix": "$3 000",
+    "ingredient": null,
+    "order": 3
+  },
+{
+    "catId": 4,
+    "titre": "Fanta",
+    "prix": "$3 000",
+    "ingredient": null,
+    "order": 4
+  },
+{
+    "catId": 4,
+    "titre": "Sprite",
+    "prix": "$3 000",
+    "ingredient": null,
+    "order": 5
+  },
+{
+    "catId": 4,
+    "titre": "Água sem gás",
+    "prix": "$3 500",
+    "ingredient": null,
+    "order": 6
+  },
+{
+    "catId": 4,
+    "titre": "Água com gás",
+    "prix": "$3 500",
+    "ingredient": null,
+    "order": 7
+  }
+]

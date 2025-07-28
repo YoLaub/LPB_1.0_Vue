@@ -1,0 +1,20 @@
+[
+  {
+    "id": 0,
+    "type": "evenement",
+    "titre": "Prepare seu evento! (Receba seu orçamento em até 48 hs)",
+    "champ_1": "Seu mail...",
+    "champ_2": "De 0 - 50",
+    "champ_3": "De 50 - 100",
+    "champ_4": "+100",
+    "champ_5": "Outro..",
+    "champ_6": "Localização..",
+    "champ_7": "Eu aceito a política de privacidade",
+    "label_1": "Quantidade de pessoas",
+    "label_2": "Data do evento:",
+    "etat_1": "Envoi en cours…",
+    "etat_2": "Enviando…",
+    "success": "Seu pedido foi enviado com sucesso!",
+    "erreur": "Ocorreu um erro. Por favor, tente novamente."
+  }
+]

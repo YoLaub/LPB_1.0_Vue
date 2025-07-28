@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "nom": "Home",
+    "navigation": "Accueil",
+    "titre": "Breton Cuisine in Argentina and Uruguay - A French Culinary Experience in Mendoza and Punta del Este",
+    "meta": "Breton Cuisine in Argentina and Uruguay - A French Culinary Experience in Mendoza and Punta del Este",
+    "lien": null
+  },
+  {
+    "id": 2,
+    "nom": "Menu",
+    "navigation": "Menu & Prestation",
+    "titre": "Crêpes, Galettes & Quiche Lorraine - French Culinary Specialties and Traditions",
+     "meta": "Crêpes, Galettes & Quiche Lorraine - French Culinary Specialties and Traditions",
+    "lien": null
+  },
+  {
+    "id": 3,
+    "nom": "NostraHistoria",
+    "navigation": "Nuestra Historia",
+    "titre": "Breton and Argentine Nomadic Cuisine - A Food Truck Between France and South America",
+    "meta": "Breton and Argentine Nomadic Cuisine - A Food Truck Between France and South America",
+    "lien": null
+  },
+  {
+    "id": 4,
+    "nom": "MentionLegal",
+    "navigation": "Mentions Legal",
+    "titre":  "Legals notices",
+    "meta": "Mentions Legale",
+    "lien": null
+  }
+]
