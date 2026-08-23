@@ -5,8 +5,10 @@ import Formulaire from '../components/Formulaire.vue'
 import Pdf from '../components/icon/Pdf.vue'
 import { useRoute } from 'vue-router'
 import { useApiData } from '../composables/useApiData.js'
+import { useDocumentHead } from '../composables/useDocumentHead.js'
 
 const { currentLang, fetchLangData } = useApiData()
+const { setHeadFromPage } = useDocumentHead()
 
 const showForm = ref(false)
 
@@ -77,6 +79,8 @@ async function fetchData() {
     ...page,
     items: contents.value.filter(c => c.pageId === page.id)
   }))
+
+  setHeadFromPage(pageWithContent.value[0])
 }
 
 onMounted(fetchData)

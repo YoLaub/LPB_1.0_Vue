@@ -21,7 +21,20 @@ function detectInitialLang() {
 
 const currentLang = ref(detectInitialLang())
 
+// Code BCP47 pour l'attribut lang du document ("PG" -> code de dossier interne
+// pour le portugais, mais "pt" est le code de langue standard à exposer)
+const HTML_LANG = { ES: 'es', EN: 'en', FR: 'fr', PG: 'pt' }
+
+function syncDocumentLang(lang) {
+  if (typeof document !== 'undefined') {
+    document.documentElement.lang = HTML_LANG[lang] || 'es'
+  }
+}
+
+syncDocumentLang(currentLang.value)
+
 watch(currentLang, (lang) => {
+  syncDocumentLang(lang)
   try {
     localStorage.setItem(STORAGE_KEY, lang)
   } catch {

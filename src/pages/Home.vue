@@ -6,12 +6,14 @@ import Geoloc from '../components/Geolocalisation.vue'
 import { ref, onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { useApiData } from '../composables/useApiData.js'
+import { useDocumentHead } from '../composables/useDocumentHead.js'
 
 const route = useRoute()
 
 const showInfo = ref(false)
 
 const { currentLang, error: fetchError, fetchLangData } = useApiData()
+const { setHeadFromPage } = useDocumentHead()
 const pages = ref([])
 const contents = ref([])
 const pageWithContent = ref([])
@@ -37,6 +39,8 @@ async function fetchData() {
     ...page,
     items: contents.value.filter(c => c.pageId === page.id)
   }))
+
+  setHeadFromPage(pageWithContent.value[0])
 }
 
 onMounted(fetchData)
