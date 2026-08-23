@@ -141,21 +141,16 @@ watch(currentLang, fetchData, (val) => {
 
       <!-- Détail plein écran -->
       <Teleport to="body">
-        <transition name="zoom">
+        <section v-if="showForm" class="fixed inset-0 z-50 flex flex-col items-center justify-center overflow-auto bg-ardoise/40"
+          role="dialog" aria-modal="true">
+          <button @click="closeForm" class=" relative top-17 text-rougeLPB z-15">
+            ✕
+          </button>
+          <div class="max-w-3xl w-full relative">
 
-          <section v-if="showForm" class="fixed inset-0 z-50 flex flex-col items-center justify-center overflow-auto"
-            role="dialog" aria-modal="true">
-            <button @click="closeForm" class=" relative top-17 text-rougeLPB z-15">
-              ✕
-            </button>
-            <div class="max-w-3xl w-full relative">
-
-              <Formulaire v-for="item in forms.filter(i => i.type === 'evenement')" :key="item.id" :form="item" />
-            </div>
-          </section>
-
-
-        </transition>
+            <Formulaire v-for="item in forms.filter(i => i.type === 'evenement')" :key="item.id" :form="item" />
+          </div>
+        </section>
       </Teleport>
 
 
@@ -202,7 +197,7 @@ watch(currentLang, fetchData, (val) => {
       <section v-for="(cat, index) in categoriesAvecContenus" :key="cat.id">
         <!-- Bloc image -->
         <div :id="'menu' + index" :class="[
-          'flex items-center justify-center gap-25 mb-12 h-150',
+          'flex items-center justify-center gap-25 mb-12 min-h-100',
           index % 2 === 1 ? 'flex-row-reverse' : 'flex-row'
         ]">
 
@@ -267,17 +262,6 @@ watch(currentLang, fetchData, (val) => {
 </template>
 
 <style scoped>
-.zoom-enter-active,
-.zoom-leave-active {
-  transition: all 0.3s ease;
-}
-
-.zoom-enter-from,
-.zoom-leave-to {
-  opacity: 0;
-  transform: scale(0.95);
-}
-
 .test {
   background-color: rgba(250, 228, 206, 0.8);
   padding: 0;

@@ -1,8 +1,7 @@
 <template>
     <div>
-        <img src="/images/fond2.webp" alt="fond" class=" object-cover -z-10 fixed right-auto left-1/12 lg:left-2/6 opacity-20"  :style="{
-        width: `${1000 - scrollY /8}px`,
-        transition: 'width 0.2s ease',
+        <img src="/images/fond2.webp" alt="" class="object-cover w-[1000px] -z-10 fixed right-auto left-1/12 lg:left-2/6 opacity-20" :style="{
+        transform: `translate3d(0, ${scrollY * 0.15}px, 0)`,
       }">
         <Header />
         <main class="min-h-screen pt-8 ">
@@ -28,13 +27,19 @@ import Language from '../components/Language.vue';
 import { ref, onMounted, onUnmounted } from 'vue'
 
 const scrollY = ref(0)
+let ticking = false
 
 const handleScroll = () => {
-  scrollY.value = window.scrollY
+  if (ticking) return
+  ticking = true
+  requestAnimationFrame(() => {
+    scrollY.value = window.scrollY
+    ticking = false
+  })
 }
 
 onMounted(() => {
-  window.addEventListener('scroll', handleScroll)
+  window.addEventListener('scroll', handleScroll, { passive: true })
 })
 
 onUnmounted(() => {
