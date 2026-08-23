@@ -44,9 +44,10 @@ jobs:
           protocol: ftps
           local-dir: ./dist/
           server-dir: ${{ secrets.FTP_REMOTE_DIR }}
-          # Ne supprime jamais côté serveur les fichiers absents du build
-          # (.htaccess, pages HTML pré-rendues pour les bots, vérif Google...).
+          # .htaccess vient maintenant de public/.htaccess (versionné, dans
+          # le build) donc il est déployé normalement. Ne supprime jamais
+          # côté serveur les fichiers absents du build (pages HTML
+          # pré-rendues pour les bots, vérif Google...).
           dangerous-clean-slate: false
           exclude: |
-            **/.htaccess
             **/google*.html

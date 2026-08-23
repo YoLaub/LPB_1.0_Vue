@@ -26,9 +26,9 @@ jobs:
       - run: npm ci
       - run: npm run build
 
-      - name: Sert le build en local
+      - name: Sert le build en local (avec les en-têtes de sécu de prod)
         run: |
-          npx --yes http-server dist -p 8080 --silent &
+          node scripts/serve-with-headers.mjs dist 8080 &
           npx --yes wait-on http://localhost:8080
 
       - name: ZAP baseline scan
