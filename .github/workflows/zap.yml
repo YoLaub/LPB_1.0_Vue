@@ -1,0 +1,43 @@
+name: OWASP ZAP baseline scan
+
+# Scan de sécurité passif sur le site buildé, avant tout passage en prod.
+# Ne tourne que sur les PR visant main (pas dev) : c'est le dernier filet
+# avant déploiement, pas un check à chaque petite PR de feature.
+on:
+  pull_request:
+    branches: [main]
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+  issues: write # ZAP ouvre une issue avec le rapport si des alertes sont trouvées
+
+jobs:
+  zap-baseline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+      - run: npm run build
+
+      - name: Sert le build en local (avec les en-têtes de sécu de prod)
+        run: |
+          node scripts/serve-with-headers.mjs dist 8080 &
+          npx --yes wait-on http://localhost:8080
+
+      - name: ZAP baseline scan
+        uses: zaproxy/action-baseline@v0.15.0
+        with:
+          target: 'http://localhost:8080'
+          # Scan passif uniquement (pas d'attaque active) : adapté à un site
+          # vitrine sans compte utilisateur, en toute sécurité même contre
+          # une instance locale de CI.
+          cmd_options: '-a'
+          fail_action: true
+          allow_issue_writing: true
