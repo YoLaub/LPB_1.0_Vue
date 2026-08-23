@@ -7,6 +7,7 @@ import { ref, onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { useApiData } from '../composables/useApiData.js'
 import { useDocumentHead } from '../composables/useDocumentHead.js'
+import { useLocalizedPath } from '../composables/useLocalizedPath.js'
 
 const route = useRoute()
 
@@ -14,6 +15,7 @@ const showInfo = ref(false)
 
 const { currentLang, error: fetchError, fetchLangData } = useApiData()
 const { setHeadFromPage } = useDocumentHead()
+const { lp } = useLocalizedPath()
 const pages = ref([])
 const contents = ref([])
 const pageWithContent = ref([])
@@ -40,7 +42,7 @@ async function fetchData() {
     items: contents.value.filter(c => c.pageId === page.id)
   }))
 
-  setHeadFromPage(pageWithContent.value[0])
+  setHeadFromPage(pageWithContent.value[0], route.name)
 }
 
 onMounted(fetchData)
@@ -87,7 +89,7 @@ watch(currentLang, fetchData,)
             class=" relative z-150 left-65 bottom-70">
             <button class=" bg-rougeLPB rounded-sm buttonMenu">
               <h3 v-if="selectedCategory?.hash" class=" text-3xl text-orange-100"> <router-link
-                  :to="{ path: '/menu_et_prestation', hash: selectedCategory.hash }">{{
+                  :to="{ path: lp('/menu_et_prestation'), hash: selectedCategory.hash }">{{
                     item.titre }}</router-link></h3>
             </button>
           </div>
@@ -135,7 +137,7 @@ watch(currentLang, fetchData,)
         <div class="2xl:ms-110" v-for="item in page.items.filter(i => i.type === 'event-bouton')" :key="item.id">
 
           <button class=" bg-crepe/20 rounded-sm buttonMenu">
-            <h4 class=" text-3xl lg:text-2xl"> <router-link to="/menu_et_prestation">{{ item.titre }}</router-link></h4>
+            <h4 class=" text-3xl lg:text-2xl"> <router-link :to="lp('/menu_et_prestation')">{{ item.titre }}</router-link></h4>
           </button>
 
         </div>

@@ -1,16 +1,23 @@
 <script setup>
 import { ref } from 'vue'
+import { useRoute, useRouter } from 'vue-router'
 import { useLang } from '../composables/useLang.js'
 
 const showLanguages = ref(false)
 const { currentLang } = useLang()
+const route = useRoute()
+const router = useRouter()
 
 function toggleLangMenu() {
   showLanguages.value = !showLanguages.value
 }
 
 function setLang(code) {
-  currentLang.value = code
+  // ES = langue par défaut, non préfixée (voir lib/i18n.js) : pas de
+  // paramètre lang dans l'URL cible. La navigation déclenche
+  // router.beforeEach -> setLangFromRoute, qui met à jour currentLang.
+  const params = code === 'ES' ? {} : { lang: code.toLowerCase() }
+  router.push({ name: route.name, params })
   showLanguages.value = false
 }
 </script>

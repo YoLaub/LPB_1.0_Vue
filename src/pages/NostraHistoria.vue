@@ -32,7 +32,7 @@ async function fetchData() {
     items: contents.value.filter(c => c.pageId === page.id)
   }))
 
-  setHeadFromPage(pageWithContent.value[0])
+  setHeadFromPage(pageWithContent.value[0], route.name)
 }
 
 onMounted(fetchData)
