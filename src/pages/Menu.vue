@@ -3,6 +3,7 @@ import { ref, onMounted, watch } from 'vue'
 import Card from '../components/MenuCard.vue'
 import Formulaire from '../components/Formulaire.vue'
 import Pdf from '../components/icon/Pdf.vue'
+import Instagram from '../components/icon/Instagram.vue'
 import { useRoute } from 'vue-router'
 import { useApiData } from '../composables/useApiData.js'
 import { useDocumentHead } from '../composables/useDocumentHead.js'
@@ -95,11 +96,11 @@ watch(showForm, (val) => {
 
 <template>
   <section v-for="page in pageWithContent" :key="page.id">
-    <h1 class=" px-10 text-3xl font-bold">{{ page.titre }}</h1>
+    <h1 class=" px-10 lg:px-20 2xl:px-50 text-3xl font-bold">{{ page.titre }}</h1>
 
     <!--INTRO-->
 
-    <section class=" bg-crepe/20 flex px-10 2xl:px-80 my-8 py-8 gap-5 items-center"
+    <section class=" bg-crepe/20 flex px-10 lg:px-20 2xl:px-50 my-8 py-8 gap-5 items-center"
       v-for="item in page.items.filter(i => i.type === 'intro-menu')" :key="item.id">
 
       <div class=" lg:basis-1/2">
@@ -140,12 +141,13 @@ watch(showForm, (val) => {
 
       <!-- Détail plein écran -->
       <Teleport to="body">
-        <section v-if="showForm" class="fixed inset-0 z-50 flex flex-col items-center justify-center overflow-auto bg-ardoise/40"
+        <section v-if="showForm" class="fixed inset-0 z-50 flex flex-col items-center overflow-y-auto bg-ardoise/40 backdrop-blur-sm px-4 py-10"
           role="dialog" aria-modal="true">
-          <button @click="closeForm" class=" relative top-17 text-rougeLPB z-15">
-            ✕
-          </button>
-          <div class="max-w-3xl w-full relative">
+          <div class="max-w-3xl w-full relative m-auto">
+            <button @click="closeForm" aria-label="Fermer"
+              class="absolute -top-3 -right-3 z-15 w-9 h-9 flex items-center justify-center rounded-full bg-rougeLPB text-white shadow-md hover:bg-ardoise transition-colors">
+              ✕
+            </button>
 
             <Formulaire v-for="item in forms.filter(i => i.type === 'evenement')" :key="item.id" :form="item" />
           </div>
@@ -158,7 +160,7 @@ watch(showForm, (val) => {
     <h3 id="menu" v-for="item in page.items.filter(i => i.type === 'menu-pres')" :key="item.id" class=" text-5xl my-10">
       {{ item.titre }}</h3>
 
-    <div class="block lg:hidden px-10">
+    <div class="block lg:hidden px-10 lg:px-20 2xl:px-50">
       <section>
 
 
@@ -173,7 +175,7 @@ watch(showForm, (val) => {
 
     <!-- TELECHARGEMENT -->
 
-    <section v-for="item in page.items.filter(i => i.type === 'download')" :key="item.id" class="mx-10">
+    <section v-for="item in page.items.filter(i => i.type === 'download')" :key="item.id" class="px-10 lg:px-20 2xl:px-50">
 
       <button class="flex items-center gap-2 bg-rougeLPB text-orange-100 py-2 px-4 rounded my-15  m-auto ">
         <a :href="`/menu/${currentLang}/Menu.pdf`" download target="_blank" rel="noopener noreferrer"
@@ -192,7 +194,7 @@ watch(showForm, (val) => {
     <div class=" hidden md:flex border-t-3 mx-auto border-rougeLPB">
     </div>
 
-    <article class="bg-ardoise px-10 2xl:px-40 py-20 lg:block hidden">
+    <article class="bg-ardoise px-10 lg:px-20 2xl:px-50 py-20 lg:block hidden">
       <section v-for="(cat, index) in categoriesAvecContenus" :key="cat.id">
         <!-- Bloc image -->
         <div :id="'menu' + index" :class="[
@@ -247,13 +249,19 @@ watch(showForm, (val) => {
     <!--INSTAGRAM-->
 
     <section v-for="item in page.items.filter(i => i.type === 'instagram')" :key="item.id"
-      class="bg-crepe/20 flex flex-row p-10 2xl:px-80 gap-10 items-center justify-center">
+      class="bg-crepe/20 flex flex-row px-10 lg:px-20 2xl:px-50 py-10 gap-10 items-center justify-center">
 
       <div>
         <img class=" w-75" v-if="item.images" :src="item.images" alt="Food truck La Petite Bretagne">
       </div>
-      <div>
+      <div class="flex flex-col items-start gap-4">
         <h3 class=" text-3xl text-start">{{ item.texte }}</h3>
+        <a href="https://www.instagram.com/lapetitebretagne.arg?igsi=MXF4bTBteG5saGJscg==" target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 bg-rougeLPB text-orange-100 rounded-lg px-5 py-2 shadow-md hover:bg-ardoise transition-colors duration-300">
+          <Instagram class="w-6 h-6" />
+          <span class="text-xl">Instagram</span>
+        </a>
       </div>
 
     </section>

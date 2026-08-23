@@ -5,7 +5,7 @@
     "type": "concept",
     "titre": "Em busca de tradições culinárias",
     "texte": "Nesta temporada, descubra uma proposta culinária com alma francesa e essência bretã.<br> Diretamente do coração da Bretanha - uma região da França marcada por sua forte identidade - chegam pratos autênticos que unem tradição e sabor.<br> Para saborear no local, levar para casa ou compartilhar em eventos privados, cada experiência foi pensada para oferecer qualidade, acolhimento e autenticidade. Deixe-se surpreender por uma gastronomia que honra suas raízes.",
-    "images": "/images/Table_de_crêpes_et_galettes.webp" 
+    "images": "/images/Table_de_crêpes_et_galettes.webp"
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "type": "event",
     "titre": "Nossa Rota de Sabor",
     "texte": "Nossa culinária bretã desembarca em Mendoza, na Argentina, de outubro até o final de dezembro de 2025, e retorna entre março e maio de 2026.<br> E para um verão repleto de sabor, você nos encontra em Punta del Este, no Uruguai, do final de dezembro de 2025 até o final de fevereiro de 2026.",
-    "images": "/images/carte_amérique_du_sud.webp" 
+    "images": "/images/carte_amérique_du_sud.webp"
   },
   {
     "id": 4,
@@ -92,7 +92,7 @@
     "pageId": 2,
     "type": "instagram",
     "titre": null,
-    "texte": "Em breve nos encontre no Instagram para acompanhar nossa aventura!",
+    "texte": "Acompanhe nossa aventura no Instagram!",
     "images": "/images/truck.png"
   },
   {
@@ -100,7 +100,7 @@
     "pageId": 1,
     "type": "instagram",
     "titre": null,
-    "texte": "Em breve nos encontre no Instagram para acompanhar nossa aventura!",
+    "texte": "Acompanhe nossa aventura no Instagram!",
     "images": "/images/truck.png"
   },
   {

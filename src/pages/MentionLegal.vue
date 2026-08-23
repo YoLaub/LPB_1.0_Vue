@@ -43,7 +43,7 @@ watch(currentLang, fetchData)
   <section v-for="page in pageWithContent" :key="page.id">
     <h1 class="text-5xl">{{ page.titre }}</h1>
     <article v-for="item in page.items.filter(i => i.type === 'mention')" :key="item.id">
-      <section v-safe-html="item.texte" class="test text-start px-4 lg:px-80 text-2xl my-20">
+      <section v-safe-html="item.texte" class="test text-start px-10 lg:px-20 2xl:px-50 text-2xl my-20">
 
       </section>
 

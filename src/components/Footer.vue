@@ -30,14 +30,14 @@ watch(currentLang, fetchData)
 
 <template>
     <footer>
-        <section class="flex md:flex-row xs:flex-col py-8 px-10 2xl:px-80 ">
+        <section class="flex md:flex-row xs:flex-col py-8 px-10 lg:px-20 2xl:px-50 ">
             <div class=" text-md xs:text-center  md:text-left basis-5/12 items-center">
                 <ul  v-for="item in nav" :key="item.id">
                     <li> <router-link :to="lp(item.lien)">{{ item.titre }}</router-link></li>
                 </ul>
             </div>
             <div class="md:py-3 flex flex-row basis-2/12 justify-center gap-2 xs:mt-5 md:mt-0">
-                <a href="#"><Instagram/></a>
+                <a href="https://www.instagram.com/lapetitebretagne.arg?igsi=MXF4bTBteG5saGJscg==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><Instagram/></a>
                 <a href="https://wa.me/33749410994" target="_blank"><WhatApp/></a>
             </div>
             <div class="basis-5/12 flex flex-row items-center xs:justify-center md:justify-end xs:mt-5  md:mt-0">

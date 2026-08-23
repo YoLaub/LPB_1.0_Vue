@@ -5,7 +5,7 @@
     "type": "concept",
     "titre": "Une tradition culinaire française à découvrir",
     "texte": "Cette saison, embarquez pour un voyage culinaire en terre bretonne, petite région de France de caractère !<br>Savoureuse et fière de ses racines, la Bretagne s’invite à votre table avec des plats authentiques à déguster sur place, à emporter... ou même chez vous lors de vos événements privés.<br>Une expérience unique, conviviale et gourmande vous attend!",
-    "images": "/images/Table_de_crêpes_et_galettes.webp" 
+    "images": "/images/Table_de_crêpes_et_galettes.webp"
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "type": "event",
     "titre": "Nos destinations culinaires",
     "texte": "Retrouvez notre cuisine bretonne à Mendoza en Argentine, d'octobre à fin décembre 2025, puis à nouveau de mars à mai 2026.\n<br>Et pour un été sous le signe de la gourmandise, nous serons à Punta del Este en Uruguay, de fin décembre 2025 à fin février 2026.",
-    "images": "/images/carte_amérique_du_sud.webp" 
+    "images": "/images/carte_amérique_du_sud.webp"
   },
   {
     "id": 4,
@@ -36,7 +36,7 @@
     "pageId": 1,
     "type": "instagram",
     "titre": null,
-    "texte": "Retrouver nous bientôt sur Instagram pour suivre notre aventure!",
+    "texte": "Suivez notre aventure sur Instagram !",
     "images": "/images/truck.png"
   },
   {
@@ -68,7 +68,7 @@
     "pageId": 2,
     "type": "instagram",
     "titre": null,
-    "texte": "Retrouver nous bientôt sur Instagram pour suivre notre aventure!",
+    "texte": "Suivez notre aventure sur Instagram !",
     "images": "/images/truck.png"
   },
   {

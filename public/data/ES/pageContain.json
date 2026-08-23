@@ -5,7 +5,7 @@
     "type": "concept",
     "titre": "Al encuentro de una tradición culinaria ",
     "texte": "Esta temporada, descubre una propuesta culinaria con alma francesa y esencia bretona.<br> Desde el corazón de Bretaña, una región de Francia con fuerte identidad, llegan platos auténticos que combinan tradición y sabor.<br> Para disfrutar en el local, llevar o compartir en eventos privados, cada experiencia está pensada para ofrecerte calidad, calidez y autenticidad. Déjate sorprender por una cocina que celebra sus raíces.",
-    "images": "/images/Table_de_crêpes_et_galettes.webp" 
+    "images": "/images/Table_de_crêpes_et_galettes.webp"
   },
   {
     "id": 2,
@@ -21,7 +21,7 @@
     "type": "event",
     "titre": "Nuestra ruta de sabor",
     "texte": "Nuestra cocina bretona llega a Mendoza, Argentina, desde octubre a fines de diciembre 2025, y nuevamente de marzo a mayo 2026.<br> Y para un verano lleno de sabor, nos encontrarás en Punta del Este, Uruguay, desde finales de diciembre 2025 hasta finales de febrero 2026.",
-    "images": "/images/carte_amérique_du_sud.webp" 
+    "images": "/images/carte_amérique_du_sud.webp"
   },
   {
     "id": 4,
@@ -92,7 +92,7 @@
     "pageId": 2,
     "type": "instagram",
     "titre": null,
-    "texte": "¡Muy pronto en Instagram para seguir nuestra aventura!",
+    "texte": "¡Seguí nuestra aventura en Instagram!",
     "images": "/images/truck.png"
   },
   {
@@ -100,17 +100,17 @@
     "pageId": 1,
     "type": "instagram",
     "titre": null,
-    "texte": "¡Muy pronto en Instagram para seguir nuestra aventura!",
+    "texte": "¡Seguí nuestra aventura en Instagram!",
     "images": "/images/truck.png"
   },
   {
-  "id": 14,
-  "pageId": 4,
-  "type": "mention",
-  "titre": "Aviso Legal",
-  "texte": "<p><strong>Editor del sitio:</strong><br>Este sitio web ([www.tusitio.com]) es operado por [Juan GIBSON et Alexandre HOVELAQUE ], con domicilio en [Mendoza], CUIT: [CUIT].<br>Correo electrónico: <a href='mailto:[mdz.bzh@gmail.com]'>[mdz.bzh@gmail.com]</a></p><p><strong>Proveedor de hosting:</strong><br>[OVH] - [2, rue Kellermann, 59100 Roubaix]</p><p><strong>Finalidad del sitio:</strong><br>Este sitio tiene como objetivo presentar el restaurante [La petite Bretagne], mostrar sus servicios, y permitir la visualización o descarga del menú.</p><p><strong>Responsabilidad:</strong><br>El contenido de este sitio se proporciona con fines informativos. El editor no se responsabiliza de errores, omisiones o problemas técnicos.</p><strong>Protección de Datos Personales</strong><p>Conforme a la Ley N° 25.326 sobre Protección de Datos Personales, los datos enviados a través del formulario de contacto (como el correo electrónico) se utilizan únicamente para responder a su mensaje. No compartimos datos con terceros salvo requerimiento legal.<br>Puede ejercer sus derechos de acceso, rectificación o supresión escribiendo a: <a href='mailto:[mdz.bzh@gmail.com]'>[mdz.bzh@gmail.com]</a></p><p>Autoridad de control: Dirección Nacional de Protección de Datos Personales - <a href='https://www.argentina.gob.ar/aaip' target='_blank'>www.argentina.gob.ar/aaip</a></p><strong>Cookies</strong><p>Este sitio puede utilizar cookies técnicas o de análisis. Puede gestionarlas desde la configuración de su navegador.</p><strong>Propiedad intelectual</strong><p>Todos los contenidos (textos, imágenes, logotipos, diseños) son propiedad de [Juan GIBSON et Alexandre HOVELAQUE ], salvo indicación contraria. Se prohíbe su reproducción sin autorización escrita.</p><strong>Menú descargable</strong><p>El menú disponible para descarga tiene fines informativos y puede estar sujeto a cambios sin previo aviso.</p><p>© [2025] - [La petite Bretagne]. Todos los derechos reservados.</p>",
-  "images": null
-},
+    "id": 14,
+    "pageId": 4,
+    "type": "mention",
+    "titre": "Aviso Legal",
+    "texte": "<p><strong>Editor del sitio:</strong><br>Este sitio web ([www.tusitio.com]) es operado por [Juan GIBSON et Alexandre HOVELAQUE ], con domicilio en [Mendoza], CUIT: [CUIT].<br>Correo electrónico: <a href='mailto:[mdz.bzh@gmail.com]'>[mdz.bzh@gmail.com]</a></p><p><strong>Proveedor de hosting:</strong><br>[OVH] - [2, rue Kellermann, 59100 Roubaix]</p><p><strong>Finalidad del sitio:</strong><br>Este sitio tiene como objetivo presentar el restaurante [La petite Bretagne], mostrar sus servicios, y permitir la visualización o descarga del menú.</p><p><strong>Responsabilidad:</strong><br>El contenido de este sitio se proporciona con fines informativos. El editor no se responsabiliza de errores, omisiones o problemas técnicos.</p><strong>Protección de Datos Personales</strong><p>Conforme a la Ley N° 25.326 sobre Protección de Datos Personales, los datos enviados a través del formulario de contacto (como el correo electrónico) se utilizan únicamente para responder a su mensaje. No compartimos datos con terceros salvo requerimiento legal.<br>Puede ejercer sus derechos de acceso, rectificación o supresión escribiendo a: <a href='mailto:[mdz.bzh@gmail.com]'>[mdz.bzh@gmail.com]</a></p><p>Autoridad de control: Dirección Nacional de Protección de Datos Personales - <a href='https://www.argentina.gob.ar/aaip' target='_blank'>www.argentina.gob.ar/aaip</a></p><strong>Cookies</strong><p>Este sitio puede utilizar cookies técnicas o de análisis. Puede gestionarlas desde la configuración de su navegador.</p><strong>Propiedad intelectual</strong><p>Todos los contenidos (textos, imágenes, logotipos, diseños) son propiedad de [Juan GIBSON et Alexandre HOVELAQUE ], salvo indicación contraria. Se prohíbe su reproducción sin autorización escrita.</p><strong>Menú descargable</strong><p>El menú disponible para descarga tiene fines informativos y puede estar sujeto a cambios sin previo aviso.</p><p>© [2025] - [La petite Bretagne]. Todos los derechos reservados.</p>",
+    "images": null
+  },
   {
     "id": 15,
     "pageId": 1,
@@ -136,5 +136,4 @@
     "texte2": "Actualmente en camino ¡Contactanos via nuestro formulario para preparar tu evento!",
     "images": null
   }
-
 ]

@@ -2,6 +2,7 @@
 import Concept from '../components/Concept.vue'
 import MenuButton from '../components/MenuButton.vue'
 import Geoloc from '../components/Geolocalisation.vue'
+import Instagram from '../components/icon/Instagram.vue'
 
 import { ref, onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
@@ -53,15 +54,15 @@ watch(currentLang, fetchData,)
 
 <template>
   <section v-for="page in pageWithContent" :key="page.id">
-    <h1 class=" text-2xl lg:text-3xl font-bold px-10">{{ page.titre }}</h1>
+    <h1 class=" text-2xl lg:text-3xl font-bold px-10 lg:px-20 2xl:px-50">{{ page.titre }}</h1>
 
     <!--INTRO-->
-    <section class=" bg-crepe/20 my-8  py-8 lg:py-0 px-10 xl:px-50 flex flex-wrap items-center">
+    <section class=" bg-crepe/20 my-8  py-8 lg:py-0 px-10 lg:px-20 2xl:px-50 flex flex-wrap items-center">
       <Concept v-for="item in page.items.filter(i => i.type === 'concept')" :key="item.id" :cat="item" />
     </section>
 
     <!--ACCES MENU-->
-    <div class="md:hidden lg:mt-24 px-10 lg:px-150">
+    <div class="md:hidden lg:mt-24 px-10 lg:px-20 2xl:px-50">
       <MenuButton v-for="item in page.items.filter(i => i.type === 'menu')" :key="item.id" :cat="item" />
     </div>
 
@@ -73,7 +74,7 @@ watch(currentLang, fetchData,)
 
 
   <!--MENU-->
-    <section class="hidden md:flex my-25 mx-auto px-10 xl:px-50 flex-wrap items-center gap-4 max-w-fit">
+    <section class="hidden md:flex my-25 mx-auto px-10 lg:px-20 2xl:px-50 flex-wrap items-center gap-4 max-w-fit">
 
       <article @click="showInfo = false" @mouseleave="showInfo = false" id="infoDetail" :class="[
         'absolute transition-transform duration-500 ease-in-out z-150',
@@ -116,7 +117,7 @@ watch(currentLang, fetchData,)
 
      <!--GEOLOCALISTAION-->
 
-    <section class="lg:h-100 bg-ardoise concept mt-10 px-10 2xl:px-50 flex flex-wrap items-center">
+    <section class="lg:h-100 bg-ardoise concept mt-10 px-10 lg:px-20 2xl:px-50 flex flex-wrap items-center">
       <Geoloc v-for="item in page.items.filter(i => i.type === 'geoloc')" :key="item.id" :item="item"/>
 
     </section>
@@ -124,7 +125,7 @@ watch(currentLang, fetchData,)
       <!--ACCES EVENEMENT-->
 
     <section v-for="item in page.items.filter(i => i.type === 'event')" :key="item.id"
-      class=" flex md:flex-row flex-warp px-10 2xl:px-80 gap-20 items-center my-20">
+      class=" flex md:flex-row flex-warp px-10 lg:px-20 2xl:px-50 gap-20 items-center my-20">
 
       <img class="hidden lg:flex w-80 rounded-2xl object-cover " v-if="item.images" :src="item.images" alt="Notre voyage">
       <div class=" flex flex-col gap-15">
@@ -145,13 +146,19 @@ watch(currentLang, fetchData,)
     </section>
 
     <!--INSTAGRAM-->
-    <section v-for="item in page.items.filter(i => i.type === 'instagram')" :key="item.id" class=" bg-crepe/20 flex flex-row p-10 2xl:px-80 gap-10 items-center justify-center">
+    <section v-for="item in page.items.filter(i => i.type === 'instagram')" :key="item.id" class=" bg-crepe/20 flex flex-row px-10 lg:px-20 2xl:px-50 py-10 gap-10 items-center justify-center">
 
       <div>
         <img class=" w-120 lg:w-75" v-if="item.images" :src="item.images" alt="Food truck La Petite Bretagne">
       </div>
-      <div >
+      <div class="flex flex-col items-start gap-4">
         <h3 class=" text-3xl text-start">{{ item.texte }}</h3>
+        <a href="https://www.instagram.com/lapetitebretagne.arg?igsi=MXF4bTBteG5saGJscg==" target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-2 bg-rougeLPB text-orange-100 rounded-lg px-5 py-2 shadow-md hover:bg-ardoise transition-colors duration-300">
+          <Instagram class="w-6 h-6" />
+          <span class="text-xl">Instagram</span>
+        </a>
       </div>
 
     </section>
