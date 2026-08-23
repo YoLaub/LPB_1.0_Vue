@@ -1,0 +1,30 @@
+name: CI
+
+# Garde-fou : tourne sur toute PR visant dev ou main, et sur les push directs
+# vers ces deux branches (filet de sécurité si jamais un push direct passe).
+# Tant que ce job n'est pas vert, la PR ne doit pas être mergeable
+# (à activer dans Settings > Branches > Branch protection rules).
+on:
+  pull_request:
+    branches: [dev, main]
+  push:
+    branches: [dev, main]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - run: npm ci
+
+      - name: Tests
+        run: npm run test
+
+      - name: Build
+        run: npm run build
