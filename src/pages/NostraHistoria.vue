@@ -59,7 +59,7 @@ watch(currentLang , fetchData)
       class="lg:h-100 bg-ardoise concept mt-10 px-10 2xl:px-50 flex flex-wrap items-center">
       <div class=" flex-auto lg:flex-2/4 lg:py-10 2xl:ps-60">
         <h2 class="py-4 text-start ">{{ item.titre }}</h2>
-        <p class="text-start" v-html="item.texte"></p>
+        <p class="text-start" v-safe-html="item.texte"></p>
       </div>
 
       <div class=" py-10 flex-auto lg:flex-2/4">
@@ -72,7 +72,7 @@ watch(currentLang , fetchData)
       class="lg:h-100 bg-crepe/20 px-10 2xl:px-50 flex flex-wrap lg:flex-row-reverse items-center">
       <div class=" flex-auto lg:flex-2/4 lg:py-10 2xl:pe-60">
         <h2 class=" py-4 text-start">{{ item.titre }}</h2>
-        <p class=" text-start" v-html="item.texte"></p>
+        <p class=" text-start" v-safe-html="item.texte"></p>
       </div>
 
       <div class="  py-10 flex-auto lg:flex-2/4">
@@ -86,7 +86,7 @@ watch(currentLang , fetchData)
     <section v-for="item in page.items.filter(i => i.type === 'valeur')" :key="item.id" class=" my-10 px-10 2xl:px-50 flex flex-wrap items-center">
       <div class="  flex-auto lg:flex-2/4 lg:py-10 2xl:ps-60">
         <h2>{{ item.titre }}</h2>
-        <p class=" text-start pb-10" v-html="item.texte"></p>
+        <p class=" text-start pb-10" v-safe-html="item.texte"></p>
       </div>
 
 

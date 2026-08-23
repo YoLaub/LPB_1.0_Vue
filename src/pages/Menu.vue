@@ -106,7 +106,7 @@ watch(currentLang, fetchData, (val) => {
       <div class=" lg:basis-1/2">
         <h3 class=" text-3xl lg:text-4xl text-start mb-8">{{ item.titre }}</h3>
 
-        <p class=" text-start" v-html="item.texte"></p>
+        <p class=" text-start" v-safe-html="item.texte"></p>
 
       </div>
 
