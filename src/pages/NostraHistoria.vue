@@ -4,10 +4,12 @@ import ImageCarousel from '../components/ImageCarousel.vue';
 import { ref, onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { useApiData } from '../composables/useApiData.js'
+import { useDocumentHead } from '../composables/useDocumentHead.js'
 
 const route = useRoute()
 
 const { currentLang, fetchLangData } = useApiData()
+const { setHeadFromPage } = useDocumentHead()
 
 const pages = ref([])
 const contents = ref([])
@@ -29,6 +31,8 @@ async function fetchData() {
     ...page,
     items: contents.value.filter(c => c.pageId === page.id)
   }))
+
+  setHeadFromPage(pageWithContent.value[0])
 }
 
 onMounted(fetchData)
