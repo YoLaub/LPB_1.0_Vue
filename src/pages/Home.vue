@@ -132,7 +132,7 @@ watch(currentLang, fetchData,)
       <div class=" flex flex-col gap-15">
         <div>
           <h3 class=" text-3xl text-start mb-4">{{ item.titre }}</h3>
-          <p class=" text-start" v-html="item.texte"></p>
+          <p class=" text-start" v-safe-html="item.texte"></p>
 
         </div>
 
