@@ -1,21 +1,140 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
   <url>
-    <loc>https://la-petite-bretagne.com/</loc>
-    <lastmod>2025-08-18</lastmod>
+    <loc>https://www.la-petite-bretagne.com/</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.la-petite-bretagne.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.la-petite-bretagne.com/en"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.la-petite-bretagne.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.la-petite-bretagne.com/pg"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.la-petite-bretagne.com/"/>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://la-petite-bretagne.com/menu_et_prestation</loc>
-    <lastmod>2025-08-18</lastmod>
+    <loc>https://www.la-petite-bretagne.com/en</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.la-petite-bretagne.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.la-petite-bretagne.com/en"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.la-petite-bretagne.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.la-petite-bretagne.com/pg"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.la-petite-bretagne.com/"/>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.la-petite-bretagne.com/fr</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.la-petite-bretagne.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.la-petite-bretagne.com/en"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.la-petite-bretagne.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.la-petite-bretagne.com/pg"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.la-petite-bretagne.com/"/>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.la-petite-bretagne.com/pg</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.la-petite-bretagne.com/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.la-petite-bretagne.com/en"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.la-petite-bretagne.com/fr"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.la-petite-bretagne.com/pg"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.la-petite-bretagne.com/"/>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://www.la-petite-bretagne.com/menu_et_prestation</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.la-petite-bretagne.com/menu_et_prestation"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.la-petite-bretagne.com/en/menu_et_prestation"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.la-petite-bretagne.com/fr/menu_et_prestation"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.la-petite-bretagne.com/pg/menu_et_prestation"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.la-petite-bretagne.com/menu_et_prestation"/>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://la-petite-bretagne.com/nostra_historia</loc>
-    <lastmod>2025-08-18</lastmod>
+    <loc>https://www.la-petite-bretagne.com/en/menu_et_prestation</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.la-petite-bretagne.com/menu_et_prestation"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.la-petite-bretagne.com/en/menu_et_prestation"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.la-petite-bretagne.com/fr/menu_et_prestation"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.la-petite-bretagne.com/pg/menu_et_prestation"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.la-petite-bretagne.com/menu_et_prestation"/>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.la-petite-bretagne.com/fr/menu_et_prestation</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.la-petite-bretagne.com/menu_et_prestation"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.la-petite-bretagne.com/en/menu_et_prestation"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.la-petite-bretagne.com/fr/menu_et_prestation"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.la-petite-bretagne.com/pg/menu_et_prestation"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.la-petite-bretagne.com/menu_et_prestation"/>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.la-petite-bretagne.com/pg/menu_et_prestation</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.la-petite-bretagne.com/menu_et_prestation"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.la-petite-bretagne.com/en/menu_et_prestation"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.la-petite-bretagne.com/fr/menu_et_prestation"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.la-petite-bretagne.com/pg/menu_et_prestation"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.la-petite-bretagne.com/menu_et_prestation"/>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.la-petite-bretagne.com/nostra_historia</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.la-petite-bretagne.com/nostra_historia"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.la-petite-bretagne.com/en/nostra_historia"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.la-petite-bretagne.com/fr/nostra_historia"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.la-petite-bretagne.com/pg/nostra_historia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.la-petite-bretagne.com/nostra_historia"/>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+  <url>
+    <loc>https://www.la-petite-bretagne.com/en/nostra_historia</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.la-petite-bretagne.com/nostra_historia"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.la-petite-bretagne.com/en/nostra_historia"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.la-petite-bretagne.com/fr/nostra_historia"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.la-petite-bretagne.com/pg/nostra_historia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.la-petite-bretagne.com/nostra_historia"/>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.la-petite-bretagne.com/fr/nostra_historia</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.la-petite-bretagne.com/nostra_historia"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.la-petite-bretagne.com/en/nostra_historia"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.la-petite-bretagne.com/fr/nostra_historia"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.la-petite-bretagne.com/pg/nostra_historia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.la-petite-bretagne.com/nostra_historia"/>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.la-petite-bretagne.com/pg/nostra_historia</loc>
+    <xhtml:link rel="alternate" hreflang="es" href="https://www.la-petite-bretagne.com/nostra_historia"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.la-petite-bretagne.com/en/nostra_historia"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://www.la-petite-bretagne.com/fr/nostra_historia"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://www.la-petite-bretagne.com/pg/nostra_historia"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.la-petite-bretagne.com/nostra_historia"/>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>

@@ -93,11 +93,13 @@ De la même façon, `robots.txt` et `sitemap.xml` existent dans `www/` mais **pa
 7. **Automatiser `lastmod` du sitemap** (finding 5) — script de build simple qui date
    le sitemap à la date du dernier commit touchant `public/data/`, ou script manuel
    à mettre à jour à chaque changement de menu.
-8. **`hreflang`** (finding 4) — dépend d'abord d'une décision produit : garder les 4
-   langues sur la même URL (actuel) ou passer à des URLs préfixées (`/en/menu`,
-   `/fr/menu`…) ? Sans changement d'URL par langue, `hreflang` n'apporte rien. À
-   trancher avec vous — impact structurel plus large que les autres points de ce
-   plan (retouche du routeur), donc positionné en dernier.
+8. ~~`hreflang`~~ — **fait (2026-08-23)**, voir `docs/index/hreflang-localized-routes.md`.
+   ES reste non préfixée (cible prioritaire Argentine/Uruguay, aucune URL déjà
+   indexée ne change), EN/FR/PG préfixées (`/en/...`, `/fr/...`, `/pg/...`).
+   `hreflang` + canonical par page générés dynamiquement, `sitemap.xml` mis à jour
+   avec les 12 URLs. Décision associée : la détection automatique de la langue du
+   navigateur (ajoutée juste avant ce point) a été retirée — incompatible avec le
+   hreflang, qui exige un contenu stable par URL.
 
 ## Ce qui est déjà bon
 - Un seul `<h1>` par page, présent partout (`Home`, `Menu`, `NostraHistoria`,

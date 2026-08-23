@@ -2,9 +2,11 @@
 import { ref, reactive, onMounted, watchEffect, nextTick, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { useApiData } from '../composables/useApiData.js'
+import { useLocalizedPath } from '../composables/useLocalizedPath.js'
 
 const route = useRoute()
 const { currentLang, fetchLangData } = useApiData()
+const { lp } = useLocalizedPath()
 const nav = ref([])
 const selectNav = ref([])
 
@@ -57,7 +59,7 @@ watch(currentLang, fetchData)
 <template>
   <div>
     <nav class="bg-crepe/20 p-4 flex rounded-sm mx-6 text-center">
-      <router-link v-for="item in selectNav" :key="item.id" :to="item.lien" class="basis-1/3 text-center p-1">
+      <router-link v-for="item in selectNav" :key="item.id" :to="lp(item.lien)" class="basis-1/3 text-center p-1">
         <span class="inline-block w-full" :ref="el => {
           if (el && item.cible) {
             navRefs[item.cible] = el
