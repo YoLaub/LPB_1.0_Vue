@@ -4,22 +4,16 @@ import Instagram from '../components/icon/Instagram.vue';
 import WhatApp from '../components/icon/WhatApp.vue';
 
 import { ref, onMounted, watch } from 'vue'
-import axios from 'axios'
-import { useLang } from '../composables/useLang.js'
+import { useApiData } from '../composables/useApiData.js'
 
-const { currentLang } = useLang()
+const { currentLang, fetchLangData } = useApiData()
 const nav = ref([])
 
 async function fetchData() {
-  try {
-    const base = `/data/${currentLang.value}`
-    const res = await axios.get(`${base}/Navigation.json`)
-    nav.value = res.data
-
-  } catch (error) {
-    console.error('Erreur lors de la récupération des données :', error)
-  }
-} 
+  const data = await fetchLangData(['Navigation.json'])
+  if (!data) return
+  nav.value = data[0]
+}
 
 
 // Recalcul aussi au mount

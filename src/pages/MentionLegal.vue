@@ -1,39 +1,32 @@
 <script setup>
-import axios from 'axios'
 import { ref, onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
-import { useLang } from '../composables/useLang.js'
+import { useApiData } from '../composables/useApiData.js'
 
 const route = useRoute()
 
-const { currentLang } = useLang()
+const { currentLang, fetchLangData } = useApiData()
 
 const pages = ref([])
 const contents = ref([])
 const pageWithContent = ref([])
 
 async function fetchData() {
-  try {
-    const base = `/data/${currentLang.value}`
-    const [pageRes, contentRes] = await Promise.all([
-      axios.get(`${base}/page.json`),
-      axios.get(`${base}/pageContain.json`)
-    ])
+  const data = await fetchLangData(['page.json', 'pageContain.json'])
+  if (!data) return
+  const [pageData, contentData] = data
 
-    pages.value = pageRes.data
-    contents.value = contentRes.data
+  pages.value = pageData
+  contents.value = contentData
 
-    // Filtrer la page correspondant à la route
-    const currentPages = pages.value.filter(p => p.nom === route.name)
+  // Filtrer la page correspondant à la route
+  const currentPages = pages.value.filter(p => p.nom === route.name)
 
-    // Fusionner contenu avec les items associés
-    pageWithContent.value = currentPages.map(page => ({
-      ...page,
-      items: contents.value.filter(c => c.pageId === page.id)
-    }))
-  } catch (error) {
-    console.error('Erreur lors de la récupération des données :', error)
-  }
+  // Fusionner contenu avec les items associés
+  pageWithContent.value = currentPages.map(page => ({
+    ...page,
+    items: contents.value.filter(c => c.pageId === page.id)
+  }))
 }
 
 onMounted(fetchData)

@@ -3,16 +3,15 @@ import Concept from '../components/Concept.vue'
 import MenuButton from '../components/MenuButton.vue'
 import Geoloc from '../components/Geolocalisation.vue'
 
-import axios from 'axios'
 import { ref, onMounted, watch } from 'vue'
 import { useRoute } from 'vue-router'
-import { useLang } from '../composables/useLang.js'
+import { useApiData } from '../composables/useApiData.js'
 
 const route = useRoute()
 
 const showInfo = ref(false)
 
-const { currentLang } = useLang()
+const { currentLang, error: fetchError, fetchLangData } = useApiData()
 const pages = ref([])
 const contents = ref([])
 const pageWithContent = ref([])
@@ -22,29 +21,22 @@ const selectedCategory = ref(null)
 const categories = ref([])
 
 async function fetchData() {
-  try {
-    const base = `/data/${currentLang.value}`
-    const [pageRes, contentRes, catRes] = await Promise.all([
-      axios.get(`${base}/page.json`),
-      axios.get(`${base}/pageContain.json`),
-      axios.get(`${base}/categorie.json`)
-    ])
+  const data = await fetchLangData(['page.json', 'pageContain.json', 'categorie.json'])
+  if (!data) return
+  const [pageData, contentData, catData] = data
 
-    pages.value = pageRes.data
-    contents.value = contentRes.data
-    categories.value = catRes.data
+  pages.value = pageData
+  contents.value = contentData
+  categories.value = catData
 
-    // Filtrer la page correspondant à la route
-    const currentPages = pages.value.filter(p => p.nom === route.name)
+  // Filtrer la page correspondant à la route
+  const currentPages = pages.value.filter(p => p.nom === route.name)
 
-    // Fusionner contenu avec les items associés
-    pageWithContent.value = currentPages.map(page => ({
-      ...page,
-      items: contents.value.filter(c => c.pageId === page.id)
-    }))
-  } catch (error) {
-    console.error('Erreur lors de la récupération des données :', error)
-  }
+  // Fusionner contenu avec les items associés
+  pageWithContent.value = currentPages.map(page => ({
+    ...page,
+    items: contents.value.filter(c => c.pageId === page.id)
+  }))
 }
 
 onMounted(fetchData)

@@ -1,13 +1,12 @@
 <script setup>
 import { ref, onMounted, watch } from 'vue'
-import axios from 'axios'
 import Card from '../components/MenuCard.vue'
 import Formulaire from '../components/Formulaire.vue'
 import Pdf from '../components/icon/Pdf.vue'
 import { useRoute } from 'vue-router'
-import { useLang } from '../composables/useLang.js'
+import { useApiData } from '../composables/useApiData.js'
 
-const { currentLang } = useLang()
+const { currentLang, fetchLangData } = useApiData()
 
 const showForm = ref(false)
 
@@ -45,49 +44,45 @@ function chunkItems(items, size = 5) {
 
 
 async function fetchData() {
-  try {
-    const base = `/data/${currentLang.value}`
-    const [catRes, contentRes, pageRes, contentPageRes, formRes] = await Promise.all([
-      axios.get(`${base}/categorie.json`),
-      axios.get(`${base}/carte.json`),
-      axios.get(`${base}/page.json`),
-      axios.get(`${base}/pageContain.json`),
-      axios.get(`${base}/formulaire.json`)
-    ])
+  const data = await fetchLangData([
+    'categorie.json',
+    'carte.json',
+    'page.json',
+    'pageContain.json',
+    'formulaire.json',
+  ])
+  if (!data) return
+  const [catData, contentData, pageData, contentPageData, formData] = data
 
-    categories.value = catRes.data
-    // CARTE
-    contenus.value = contentRes.data
+  categories.value = catData
+  // CARTE
+  contenus.value = contentData.sort((a, b) => a.order - b.order)
 
-    contenus.value = contenus.value.sort((a, b) => a.order - b.order)
+  pages.value = pageData
+  contents.value = contentPageData
 
-    pages.value = pageRes.data
-    contents.value = contentPageRes.data
+  forms.value = formData
 
-    forms.value = formRes.data
+  // Fusionner les contenus dans les catégories
+  categoriesAvecContenus.value = categories.value.map(cat => ({
+    ...cat,
+    items: contenus.value.filter(item => item.catId === cat.id)
+  }));
 
-    // Fusionner les contenus dans les catégories
-    categoriesAvecContenus.value = categories.value.map(cat => ({
-      ...cat,
-      items: contenus.value.filter(item => item.catId === cat.id)
-    }));
+  // Filtrer la page correspondant à la route
+  const currentPages = pages.value.filter(p => p.nom === route.name)
 
-    // Filtrer la page correspondant à la route
-    const currentPages = pages.value.filter(p => p.nom === route.name)
-
-    // Fusionner contenu avec les items associés
-    pageWithContent.value = currentPages.map(page => ({
-      ...page,
-      items: contents.value.filter(c => c.pageId === page.id)
-    }))
-
-  } catch (error) {
-    console.error('Erreur de chargement des données :', error)
-  }
+  // Fusionner contenu avec les items associés
+  pageWithContent.value = currentPages.map(page => ({
+    ...page,
+    items: contents.value.filter(c => c.pageId === page.id)
+  }))
 }
 
 onMounted(fetchData)
-watch(currentLang, fetchData, (val) => {
+watch(currentLang, fetchData)
+// Bloque le scroll de fond pendant que la modale du formulaire est ouverte
+watch(showForm, (val) => {
   document.body.style.overflow = val ? 'hidden' : ''
 })
 

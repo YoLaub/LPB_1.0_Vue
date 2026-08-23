@@ -1,11 +1,10 @@
 <script setup>
 import { ref, reactive, onMounted, watchEffect, nextTick, watch } from 'vue'
 import { useRoute } from 'vue-router'
-import axios from 'axios'
-import { useLang } from '../composables/useLang.js'
+import { useApiData } from '../composables/useApiData.js'
 
 const route = useRoute()
-const { currentLang } = useLang()
+const { currentLang, fetchLangData } = useApiData()
 const nav = ref([])
 const selectNav = ref([])
 
@@ -13,19 +12,13 @@ const navRefs = reactive({})
 
 
 async function fetchData() {
-  try {
-    const base = `/data/${currentLang.value}`
-    const res = await axios.get(`${base}/Navigation.json`)
-    nav.value = res.data
+  const data = await fetchLangData(['Navigation.json'])
+  if (!data) return
+  nav.value = data[0]
 
-    // Filtrer la page correspondant à la route
-    selectNav.value = nav.value.filter(p => p.Type === "principal")
-
-
-  } catch (error) {
-    console.error('Erreur lors de la récupération des données :', error)
-  }
-} 
+  // Filtrer la page correspondant à la route
+  selectNav.value = nav.value.filter(p => p.Type === "principal")
+}
 
 const svgLeft = ref('0px')
 const updateSvgPosition = () => {
