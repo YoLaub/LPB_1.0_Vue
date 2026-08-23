@@ -7,14 +7,14 @@ import 'swiper/css/pagination'; // 👈 essentiel pour les points
 import { Navigation, Pagination } from 'swiper/modules';
 
 const images = [
-  '/images/cote_bretonne.webp',
-  '/images/cote_bretonne_2.webp',
-  '/images/saint-goustan.webp',
-  '/images/bigoudenes.webp',
-  '/images/sosneado.webp',
-  '/images/vignes.webp',
-  '/images/mountain.webp',
-  '/images/tango1.webp'
+  { src: '/images/cote_bretonne.webp', alt: 'Côte bretonne' },
+  { src: '/images/cote_bretonne_2.webp', alt: 'Côte bretonne' },
+  { src: '/images/saint-goustan.webp', alt: 'Port de Saint-Goustan, Bretagne' },
+  { src: '/images/bigoudenes.webp', alt: 'Coiffe bigoudène traditionnelle' },
+  { src: '/images/sosneado.webp', alt: 'Volcán El Sosneado, Mendoza' },
+  { src: '/images/vignes.webp', alt: 'Vignobles de Mendoza' },
+  { src: '/images/mountain.webp', alt: 'Cordillère des Andes' },
+  { src: '/images/tango1.webp', alt: 'Tango argentin' },
 ];
 
 
@@ -24,7 +24,7 @@ const images = [
   <Swiper :modules="[Navigation, Pagination]" :pagination="{ clickable: true }" navigation loop
     class=" w-75 lg:w-120 max-w-xl mx-auto rounded-xl  overflow-hidden">
     <SwiperSlide v-for="(image, index) in images" :key="index">
-      <img :src="image" class="w-80 mx-auto shadow-lg object-cover rounded-xl" />
+      <img :src="image.src" :alt="image.alt" class="w-80 mx-auto shadow-lg object-cover rounded-xl" />
     </SwiperSlide>
   </Swiper>
 </template>

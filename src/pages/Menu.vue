@@ -202,7 +202,7 @@ watch(showForm, (val) => {
 
           <div>
             <img class="md:w-75 2xl:w-100 object-cover shadow mb-4 rounded-2xl" v-if="cat.image" :src="cat.image"
-              alt="Illustration catégorie" />
+              :alt="cat.titre" />
 
           </div>
 
@@ -250,7 +250,7 @@ watch(showForm, (val) => {
       class="bg-crepe/20 flex flex-row p-10 2xl:px-80 gap-10 items-center justify-center">
 
       <div>
-        <img class=" w-75" v-if="item.images" :src="item.images" alt="Aventure">
+        <img class=" w-75" v-if="item.images" :src="item.images" alt="Food truck La Petite Bretagne">
       </div>
       <div>
         <h3 class=" text-3xl text-start">{{ item.texte }}</h3>

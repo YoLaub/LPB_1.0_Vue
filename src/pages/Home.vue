@@ -146,7 +146,7 @@ watch(currentLang, fetchData,)
     <section v-for="item in page.items.filter(i => i.type === 'instagram')" :key="item.id" class=" bg-crepe/20 flex flex-row p-10 2xl:px-80 gap-10 items-center justify-center">
 
       <div>
-        <img class=" w-120 lg:w-75" v-if="item.images" :src="item.images" alt="Aventure">
+        <img class=" w-120 lg:w-75" v-if="item.images" :src="item.images" alt="Food truck La Petite Bretagne">
       </div>
       <div >
         <h3 class=" text-3xl text-start">{{ item.texte }}</h3>
