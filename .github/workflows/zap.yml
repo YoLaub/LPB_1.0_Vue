@@ -41,3 +41,6 @@ jobs:
           cmd_options: '-a'
           fail_action: true
           allow_issue_writing: true
+          # Alertes triées et justifiées une par une, pas juste "silence
+          # tout" — voir .zap/rules.tsv pour le pourquoi de chaque décision.
+          rules_file_name: '.zap/rules.tsv'

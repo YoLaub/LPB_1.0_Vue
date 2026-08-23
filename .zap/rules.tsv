@@ -1,0 +1,29 @@
+# Décisions prises sur les alertes ZAP baseline, une par ligne, avec la
+# raison — pas juste "IGNORE" à l'aveugle. Format : <id-règle><TAB><action>
+# action : IGNORE (accepté, ne bloque jamais) | WARN (visible, ne bloque pas)
+# Toute alerte absente de ce fichier garde le comportement par défaut du
+# scan (FAIL) — donc bloque le merge tant qu'elle n'est pas triée ici.
+
+# Storable and Cacheable Content — site public sans donnée sensible, la mise
+# en cache des pages est voulue, pas une faille.
+10049	IGNORE
+
+# CSP: style-src unsafe-inline — Vue utilise des bindings :style="..." pour
+# le parallax (DefaultLayout) et d'autres composants ; les retirer du CSP
+# demanderait de refactorer ces styles inline en variables CSS. Compromis
+# accepté pour l'instant, mais gardé visible (WARN) plutôt qu'ignoré.
+10055	WARN
+
+# Modern Web Application — détection du framework JS (Vue), informatif,
+# pas une vulnérabilité.
+10109	IGNORE
+
+# Cross-Origin-Embedder-Policy manquant — pas nécessaire ici (pas de
+# SharedArrayBuffer/WASM à isoler) et risquerait de casser l'iframe Google
+# Maps (Geolocalisation.vue) et les polices/images externes si mal réglé.
+90004	IGNORE
+
+# Sec-Fetch-Dest manquant côté requête — rien à faire côté serveur sur un
+# hébergement statique (Apache + fichiers, aucune logique applicative
+# capable d'inspecter les en-têtes de la requête entrante).
+90005	IGNORE
