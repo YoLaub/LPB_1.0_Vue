@@ -44,11 +44,13 @@ Audit en lecture seule — aucune correction appliquée.
    `src/components/Formulaire.vue:28` — `https://formsubmit.co/ajax/88684e3280c614c43f5fc6b0b01e67e1`.
    Ce hash identifie votre boîte de réception FormSubmit ; il est visible par quiconque
    inspecte le bundle JS. N'importe qui peut le rejouer directement (curl/Postman) pour
-   spammer cette adresse, en dehors du site. Un honeypot (`_honey`, ligne 58) est déjà en
-   place, ce qui aide, mais aucun CAPTCHA ni rate-limit visible côté client.
-   → Pas de faille de code à corriger à proprement parler (FormSubmit fonctionne ainsi
-   par design), mais à documenter comme risque accepté ou à durcir (reCAPTCHA FormSubmit,
-   `_captcha:true`).
+   spammer cette adresse, en dehors du site.
+   → **Correction (2026-08-23) : vérifié auprès de la doc FormSubmit, le reCAPTCHA est
+   activé par défaut sur tous les formulaires et ne se désactive que via un champ caché
+   `_captcha:false` — absent ici, donc déjà actif.** Un honeypot (`_honey`, ligne 58) est
+   également déjà en place. Pas d'action supplémentaire nécessaire sur ce point ; le
+   finding initial suggérant d'« activer » le captcha était basé sur une hypothèse
+   incorrecte.
 
 4. **Aucune validation serveur visible** — la seule validation est côté client
    (`required`, `type="email"`, `type="date"` sur les inputs de `Formulaire.vue`).
@@ -118,9 +120,10 @@ Audit en lecture seule — aucune correction appliquée.
    (finding 5) — faible effort, gain de posture sécurité.
 6. **Décider du comportement de `useLang`** (détection navigateur + persistance,
    finding 12) — dépend d'un choix produit, à trancher avec vous avant d'implémenter.
-7. **Durcir ou documenter le risque `Formulaire.vue`** (findings 3-4) — évaluer
-   l'activation du CAPTCHA FormSubmit (`_captcha:true`) si le spam devient un problème
-   réel ; sinon documenter le risque accepté dans le `CLAUDE.md`.
+7. ~~Durcir le CAPTCHA `Formulaire.vue`~~ — fait à tort dans le finding 3 initial,
+   déjà actif par défaut chez FormSubmit, rien à faire (voir correction ci-dessus).
+   Reste ouvert : finding 4 (absence de validation serveur), à documenter comme risque
+   accepté vu l'absence de backend propre.
 8. **Extraire la logique de fetch de `Menu.vue`** dans un composable dédié (finding 10) —
    à faire une fois le composable partagé du point 3 en place, pour éviter de le refaire
    deux fois.
