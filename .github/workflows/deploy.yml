@@ -41,7 +41,12 @@ jobs:
           server: ${{ secrets.FTP_SERVER }}
           username: ${{ secrets.FTP_USERNAME }}
           password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftps
+          # L'hébergement mutualisé OVH de ce compte refuse le FTPS
+          # (AUTH TLS) sur ce port : "500 This security scheme is not
+          # implemented". Repassé en FTP simple — accepté ici pour un site
+          # vitrine sans donnée sensible ; à revoir si SFTP devient
+          # disponible côté OVH (voir CLAUDE.md).
+          protocol: ftp
           local-dir: ./dist/
           server-dir: ${{ secrets.FTP_REMOTE_DIR }}
           # .htaccess vient maintenant de public/.htaccess (versionné, dans
